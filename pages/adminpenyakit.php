@@ -139,7 +139,8 @@ $kode_gejala = 'aa';
                         <td class="text-start"><?php echo $data['nama_penyakit'] ?></td>
                         <td class="text-center"><?php echo $data['nilai'] ?></td>
                         <td class="text-center">
-                          <a href="phpadminpenyakithapus.php?kode_penyakit=<?php echo $data['kode_penyakit'] ?>">
+                          <a href="phpadminpenyakithapus.php?kode_penyakit=<?php echo $data['kode_penyakit'] ?>" 
+                          onclick="return confirm('Anda yakin akan menghapus data ini?')">
                             <button type="button" class="btn btn-danger btn-sm w-auto me-1 mb-0 pt-2">
                               <i class='bx bx-trash' style="font-size : 1.25rem;"></i>
                             </button>

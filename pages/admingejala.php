@@ -139,7 +139,7 @@ $kode_gejala = 'aa';
                         <td class="text-start"><?php echo $data['nama_gejala'] ?></td>
                         <td class="text-center"><?php echo $data['bobot'] ?></td>
                         <td class="text-center">
-                          <a href="phpadmingejalahapus.php?kode_gejala=<?php echo $data['kode_gejala'] ?>">
+                          <a href="phpadmingejalahapus.php?kode_gejala=<?php echo $data['kode_gejala'] ?>" onclick="return confirm('Anda yakin akan menghapus data ini?')">
                             <button type="button" class="btn btn-danger btn-sm w-auto me-1 mb-0 pt-2">
                               <i class='bx bx-trash' style="font-size : 1.25rem;"></i>
                             </button>
@@ -429,17 +429,6 @@ $kode_gejala = 'aa';
 
   <!--  Plugin for Parallax, full documentation here: https://github.com/wagerfield/parallax  -->
   <script src="../assets/js/plugins/parallax.min.js"></script>
-
-
-
-
-
-
-
-
-
-
-
   <!-- Control Center for Material UI Kit: parallax effects, scripts for the example pages etc -->
   <!--  Google Maps Plugin    -->
 
@@ -473,33 +462,5 @@ $kode_gejala = 'aa';
       };
     }
   </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </body>
-
 </html>

@@ -145,8 +145,8 @@ $kode_gejala = 'aa';
                         <td class="text-center"><?php echo $data['nama'] ?></td>
                         <td class="text-center"><?php echo $data['tipe'] ?></td>
                         <td class="text-center">
-                          <a href="phpadminakunhapus.php?id=<?php echo $data['id'] ?>">
-                            <button type="button" class="btn btn-danger btn-sm w-auto me-1 mb-0 pt-2">
+                          <a href="phpadminakunhapus.php?id=<?php echo $data['id'] ?>" onclick="return confirm('Anda yakin akan menghapus data ini?')">
+                          <button type="button" class="btn btn-danger btn-sm w-auto me-1 mb-0 pt-2">
                               <i class='bx bx-trash' style="font-size : 1.25rem;"></i>
                             </button>
                           </a>

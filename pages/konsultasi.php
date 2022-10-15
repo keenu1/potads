@@ -24,6 +24,7 @@ unset($_SESSION["konsul"]);
   <!-- Font Awesome Icons -->
   <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
 
+
   <!-- Material Icons -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
 
@@ -38,25 +39,6 @@ unset($_SESSION["konsul"]);
   <?php
   include 'phpnavbarpages.php';
   ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   <header class="header-2" id="home">
     <div class="page-header min-vh-75 relative" style="background-image: url('../assets/img/bg-konsul.jpg')">
       <span class="mask bg-gradient-primary opacity-4"></span>
@@ -71,7 +53,7 @@ unset($_SESSION["konsul"]);
           <div class="row justify-content-center text-center my-sm-5">
             <div class="col-lg-8">
               <h2 class="text-dark mb-0">Form Konsultasi Down Syndrome</h2>
-              <p class="lead">Isi Dengan baik dan benar agar mendapat nilai 100. </p>
+              <p class="lead">Silakan melakukan pengisian sesuai arahan yang tersedia. </p>
             </div>
           </div>
         </div>
@@ -80,8 +62,8 @@ unset($_SESSION["konsul"]);
         <div class="row">
           <div class="col-lg-3">
             <div class="position-sticky pb-lg-5 pb-3 mt-lg-0 mt-5 ps-2" style="top: 100px">
-              <h3>Form Orang Tua</h3>
-              <h6 class="text-secondary font-weight-normal pe-3">Orang tua adalah minuman halal bila diisi dengan marjan.</h6>
+              <h3>Formulir Pasien </h3>
+              <h6 class="text-secondary font-weight-normal pe-3">Identitas Orang Tua Serta Pasien.</h6>
             </div>
           </div>
           <div class="col-lg-9">
@@ -90,75 +72,135 @@ unset($_SESSION["konsul"]);
               <div class="col-12">
                 <div class="position-relative border-radius-xl overflow-hidden shadow-lg mb-7">
                   <div class="container border-bottom">
-                    <div class="row justify-space-between py-2">
+                    <div class="row justify-space-between py-3">
                       <div class="col-lg me-auto">
-                        <form role="form" id="contact-form" method="post" action="phpproseskonsultasi.php" autocomplete="off">
-                          <!-- <div class="row text-center py-1 ">
-                          <div class="col-lg mx-auto">
-                            <div class="input-group input-group-static">
-                              <label>Nama Orang Tua</label>
-                              <input class="form-control" placeholder="eg. Kurt Shelby" type="text">
-                            </div>
-                          </div>
-                        </div> -->
-                          <!-- <div class="row text-center py-1">
-                          <div class="col-lg mx-auto text-start">
-                            <label>Jenis Kelamin</label>
-                            <div class="form-check">
-                              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                              <label class="form-check-label" for="flexRadioDefault1">
-                                Laki-Laki
-                              </label>
-                            </div>
-                            <div class="form-check">
-                              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                              <label class="form-check-label" for="flexRadioDefault2">
-                                Perempuan
-                              </label>
-                            </div>
-                          </div>
-                        </div> -->
-                          <?php
-                          include 'koneksi.php';
-                          $query = mysqli_query($koneksi, "SELECT * FROM gejala") or die(mysqli_error($koneksi));
-                          $i = 1;
-                          foreach ($query as $data) {
-                          ?>
-                            <div class="row text-center py-1">
-                              <div class="col-lg mx-auto text-start">
-                                <label>Apakah Anda Mengalami <?php echo $data['nama_gejala'] ?> ?</label>
-                                <div class="form-check">
-                                  <input class="form-check-input" type="radio" name="orangtua<?php echo $i ?>" id="bt1" value="<?php echo $data['bobot'] ?>">
-                                  <label class="form-check-label" for="flexRadioDefault3">
-                                    Ya
-                                  </label>
-                                </div>
-                                <div class="form-check">
-                                  <input class="form-check-input" type="radio" name="orangtua<?php echo $i ?>" id="bt1" value="0" checked>
-                                  <label class="form-check-label" for="flexRadioDefault3">
-                                    Tidak
-                                  </label>
+                        <form role="form" id="contact-form " method="post" action="phpproseskonsultasi.php" autocomplete="off">
+
+                          <div class="row text-center py-2 ">
+                            <div class="col-lg mx-auto">
+                              <div class="input-group input-group-static">
+                                <label>Nama Orang Tua Ananda (Ayah)</label>
+                                <input class="form-control" placeholder="eg. Kurt Shelby" type="text" name="nama_ayah" required>
+                                <div class="invalid-feedback">
+                                  Please choose a username.
                                 </div>
                               </div>
                             </div>
-                          <?php
-                            $i++;
-                          }
-                          ?>
+                          </div>
+
+                          <div class="row text-center py-2 ">
+                            <div class="col-lg mx-auto">
+                              <div class="input-group input-group-static">
+                                <label>Nama Orang Tua Ananda (Ibu)</label>
+                                <input class="form-control" placeholder="eg. Kurt Shelby" type="text" name="nama_ibu" required>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="row text-center py-2 ">
+                            <div class="col-lg mx-auto">
+                              <div class="input-group input-group-static">
+                                <label>Kota Domisili Saat Ini. </label>
+                                <input class="form-control" placeholder="eg.Bekasi type=" text" name="kota_domisili" required>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="row text-center py-2 ">
+                            <div class="col-lg mx-auto">
+                              <div class="input-group input-group-static">
+                                <label>Nomor Hp Orang Tua Ananda (Ayah/Ibu) </label>
+                                <input class="form-control" placeholder="eg. 081111111111" type="text" name="no_hp" required>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="row text-center py-2 ">
+                            <div class="col-lg mx-auto">
+                              <div class="input-group input-group-static">
+                                <label>Nama Ananda </label>
+                                <input class="form-control" placeholder="eg. putri kalia" type="text" name="nama" required>
+                              </div>
+                            </div>
+                          </div>
+
+                          <label>Jenis Kelamin Ananda</label>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="jenis_kelamin" id="flexRadioDefault1" value="Laki-Laki" required>
+                            <label class="form-check-label" for="flexRadioDefault1">
+                              Laki-Laki
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="jenis_kelamin" id="flexRadioDefault2" value="Perempuan" required>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                              Perempuan
+                            </label>
+                          </div>
+                          <div class="row py-3">
+
+                            <div class="input-group input-group-static">
+                              <label>Tanggal Lahir Ananda</label>
+                              <span class="input-group-text"><i class="fas fa-calendar"></i></span>
+                              <input class="form-control datepicker" placeholder="Please select date" type="text" name="tanggal_lahir" required>
+                            </div>
+                          </div>
+
+                          <div class="row text-center py-2 ">
+                            <div class="col-lg mx-auto">
+                              <div class="input-group input-group-static">
+                                <label>Berapa Umur Ananda </label>
+                                <input class="form-control" placeholder="eg. putri kalia" type="text" name="umur" required>
+                              </div>
+                            </div>
+                          </div>
                       </div>
                     </div>
+                    <!-- <div class="row text-center py-1">
+                      <div class="col-lg mx-auto text-start">
+                        <?php
+                        // include 'koneksi.php';
+                        // $query = mysqli_query($koneksi, "SELECT * FROM pasien") or die(mysqli_error($koneksi));
+                        // $i = 1;
+                        // foreach ($query as $data) {
+                        ?>
+                          <div class="row text-center py-2">
+                            <div class="col-lg mx-auto text-start">
+                              <label>Apakah Ananda Memiliki Gejala <?php //echo $data['nama_gejala'] 
+                                                                    ?> ?</label>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="orangtua<?php //echo $i 
+                                                                                            ?>" id="bt1" value="<?php echo $data['bobot'] ?>">
+                                <label class="form-check-label" for="flexRadioDefault3">
+                                  Ya
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="orangtua<?php //echo $i 
+                                                                                            ?>" id="bt1" value="0" checked>
+                                <label class="form-check-label" for="flexRadioDefault3">
+                                  Tidak
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                        <?php
+                        // $i++;
+                        // }
+                        ?>
+                      </div>
+                    </div> -->
                   </div>
                 </div>
               </div>
     </section>
-
     <section class=" py-1">
       <div class="container mt-sm-1 mt-1">
         <div class="row">
           <div class="col-lg-3">
             <div class="position-sticky pb-lg-5 pb-3 mt-lg-0 mt-5 ps-2" style="top: 100px">
-              <h3>Form Babi</h3>
-              <h6 class="text-secondary font-weight-normal pe-3">Hewan Yang Paling Jitu dalam melakukan Trading Saham (NGEPET)</h6>
+              <h3>Form Konsultasi </h3>
+              <h6 class="text-secondary font-weight-normal pe-3">Sub title isi disini</h6>
             </div>
           </div>
           <div class="col-lg-9">
@@ -177,7 +219,6 @@ unset($_SESSION["konsul"]);
                             </div>
                           </div>
                         </div> -->
-
                         <?php
                         include 'koneksi.php';
                         $query = mysqli_query($koneksi, "SELECT * FROM gejala") or die(mysqli_error($koneksi));
@@ -186,7 +227,7 @@ unset($_SESSION["konsul"]);
                         ?>
                           <div class="row text-center py-1">
                             <div class="col-lg mx-auto text-start">
-                              <label>Apakah Anak Anda Mengalami <?php echo $data['nama_gejala'] ?> ?</label>
+                              <label>Apakah Anak Anda memiliki gejala <?php echo $data['nama_gejala'] ?> ?</label>
                               <div class="form-check">
                                 <input class="form-check-input" type="radio" name="bayi<?php echo $i ?>" id="bt1" value="<?php echo $data['bobot'] ?>">
                                 <label class="form-check-label" for="flexRadioDefault3">
@@ -217,11 +258,11 @@ unset($_SESSION["konsul"]);
       <div class="container">
         <div class="row">
           <div class="row justify-content-center text-center my-sm-5">
-            <div class="col-lg-8">
-              <p class="lead">Periksa kembali Jawaban ke teman anda dan Bila Anda Menyontek nilai 0</p>
-              <div class="row text-center py-2">
-                <div class="col-12 mx-auto">
-                  <button type="submit" class="btn bg-gradient-primary btn-lg">Kirim dan Konsultasi</button>
+            <div class="col-lg-12">
+              <div class="row text-center ">
+                <p class="lead">Pastikan data yang telah diisi benar sebelum melanjutkan.</p>
+                <div class="col-5 mx-auto">
+                  <button type="submit" class="btn bg-gradient-primary btn-lg"> Kirim dan Konsultasi</button>
                 </div>
                 </form>
               </div>
@@ -553,6 +594,15 @@ Bahkan, gejala atau ciri-ciri Down syndrome atau sindrom Down bisa berbeda-beda 
   <script src="../assets/js/core/popper.min.js" type="text/javascript"></script>
   <script src="../assets/js/core/bootstrap.min.js" type="text/javascript"></script>
   <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
+  <script src="../assets/js/core/popper.min.js" type="text/javascript"></script>
+  <script src="../assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../assets/js/plugins/flatpickr.min.js"></script>
+  <script src="https://demos.creative-tim.com/material-kit/assets/js/material-kit.min.js?v=3.0.4" type="text/javascript"></script>
+  <script>
+    if (document.querySelector(".datepicker")) {
+      flatpickr(".datepicker", {});
+    }
+  </script>
 
 
 

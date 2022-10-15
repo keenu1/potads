@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 14 Agu 2022 pada 15.56
+-- Waktu pembuatan: 15 Okt 2022 pada 15.54
 -- Versi server: 10.4.22-MariaDB
 -- Versi PHP: 8.1.1
 
@@ -38,9 +38,49 @@ CREATE TABLE `gejala` (
 --
 
 INSERT INTO `gejala` (`kode_gejala`, `nama_gejala`, `bobot`) VALUES
-('BDNLMS', 'Badan Lemas', 0.4),
-('BDNPNS', 'Badan Panas', 0.2),
-('PSG', 'Pusing', 0.2);
+('G001', 'Otot-otot lemah', 0),
+('G002', 'Mata Sipit', 0),
+('G003', 'Sendi Hyperflexible (Sangat Lentur)', 0),
+('G004', 'Tangan Pendek', 0),
+('G005', 'Telapak Kaki Besar Dengan Jempol Pendek', 0),
+('G006', 'Bentuk Hidung Agak Lebar, Pesek.', 0),
+('G007', 'Rongga Mulut Sempit', 0),
+('G008', 'Kecendrungan Memiliki Penyakit Bawaan', 0),
+('G009', 'Kepala Bagian Belakang Agak Datar', 0),
+('G010', 'Dikandung saat ibu berumur diatas 30 tahun ', 0),
+('G011', 'Berat Badan Saat Lahir Rendah', 0),
+('G012', 'Lidah Pecah-Pecah', 0),
+('G013', 'Telapak Tangan Lenar dan Hanya Terdapat Satu Garis Tangan', 0),
+('G015', 'Leher Pendek', 0),
+('G016', 'Ukuran Kepala Lebih Besar', 0),
+('G017', 'Rambut Bertekstur Lemas Dan Lurus', 0),
+('G018', 'Tungkai Tangan/Kaki Kecil Dengan Jari-Jari Pendek', 0);
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `pasien`
+--
+
+CREATE TABLE `pasien` (
+  `id_pasien` int(11) NOT NULL,
+  `nama_ayah` text DEFAULT NULL,
+  `nama_ibu` text DEFAULT NULL,
+  `nomor_hp` text DEFAULT NULL,
+  `jenis_kelamin` text DEFAULT NULL,
+  `kota_domisili` text DEFAULT NULL,
+  `nama_pasien` text DEFAULT NULL,
+  `tanggal_lahir` text DEFAULT NULL,
+  `umur` text DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data untuk tabel `pasien`
+--
+
+INSERT INTO `pasien` (`id_pasien`, `nama_ayah`, `nama_ibu`, `nomor_hp`, `jenis_kelamin`, `kota_domisili`, `nama_pasien`, `tanggal_lahir`, `umur`) VALUES
+(2, 'Thomas Shelby', 'Nunung', '0888', 'Laki-Laki', 'Roma', 'Andi', '2022-10-14', '7'),
+(3, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz');
 
 -- --------------------------------------------------------
 
@@ -59,8 +99,9 @@ CREATE TABLE `penyakit` (
 --
 
 INSERT INTO `penyakit` (`kode_penyakit`, `nama_penyakit`, `nilai`) VALUES
-('TP', 'Tipes', 0.2),
-('DM', 'DEMAM', 0.9);
+('P001', 'Trisomi 21', 0),
+('P002', 'Translokasi', 0),
+('P003', 'Mosaik', 0);
 
 -- --------------------------------------------------------
 
@@ -82,8 +123,7 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `email`, `password`, `tipe`, `nama`, `foto_profil`) VALUES
-(1, 'admin@potads.com', 'admin', 1, 'admin', 'rizki.jpg'),
-(13, 'user@potads', 'user', 2, 'user', '');
+(1, 'admin@potads.com', 'admin', 1, 'admin', 'none.jpg');
 
 --
 -- Indexes for dumped tables
@@ -96,6 +136,12 @@ ALTER TABLE `gejala`
   ADD PRIMARY KEY (`kode_gejala`);
 
 --
+-- Indeks untuk tabel `pasien`
+--
+ALTER TABLE `pasien`
+  ADD PRIMARY KEY (`id_pasien`);
+
+--
 -- Indeks untuk tabel `user`
 --
 ALTER TABLE `user`
@@ -106,10 +152,16 @@ ALTER TABLE `user`
 --
 
 --
+-- AUTO_INCREMENT untuk tabel `pasien`
+--
+ALTER TABLE `pasien`
+  MODIFY `id_pasien` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
 -- AUTO_INCREMENT untuk tabel `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

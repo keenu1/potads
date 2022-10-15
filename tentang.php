@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" itemscope itemtype="http://schema.org/WebPage">
 
+<?php
+// session_start();
+// include 'phpcek.php';
+?>
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -8,7 +13,7 @@
   <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/logo.jpg">
   <link rel="icon" type="image/jpg" href="./assets/img/logo.jpg">
 
-  <title>Sistem Pakar</title>
+  <title>Potads</title>
 
   <!--     Fonts and icons     -->
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
@@ -16,6 +21,9 @@
   <!-- Nucleo Icons -->
   <link href="./assets/css/nucleo-icons.css" rel="stylesheet" />
   <link href="./assets/css/nucleo-svg.css" rel="stylesheet" />
+
+  <!-- Box Icons -->
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 
   <!-- Font Awesome Icons -->
   <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
@@ -31,115 +39,176 @@
 <body class="index-page bg-gray-200">
 
   <!-- Navbar -->
-
   <?php
   session_start();
   include 'phpnavbarindex.php';
   ?>
 
-  <header class="header-2" id="home">
-    <div class="page-header min-vh-75 relative" style="background-image: url('./assets/img/bg2.jpg')">
-      <span class="mask bg-gradient-primary opacity-5"></span>
+  <header class="header-2 hide" id="home">
+    <div class="page-header min-vh-25 relative" style="background-image: url('./assets/img/bg-konsul.jpg')">
+      <span class="mask bg-gradient-primary opacity-4"></span>
+    </div>
+  </header>
+
+
+
+  <div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6">
+    <section class="my-0 py-0">
       <div class="container">
         <div class="row">
-          <div class="col-lg-9 text-center mx-auto">
-            <h1 class="text-white pt-3 mt-n5"> Sistem Pakar Deteksi Down Syndrome Pada Balita </h1>
-            <p class="lead text-white mt-3"> <br> Menggunakan Metode Dempster Shafer Dengan Hasil Penelusuran Forward Chaining </br></p>
-            <!-- <a href="./pages/konsultasi.php" class="btn btn-lg   bg-white text-primary  mb-0 me-1 mt-5 mt-md-0">Konsultasi</a> -->
-            <div class="github-buttons">
-              <a href="./pages/konsultasi.php" class="btn btn-lg bg-white   bg-gradient-white mb-5 mb-sm-0 text-primary text-lg">Konsultasi</a>
-              <div class="github-button">
-                <span></span>
+          <div class="row justify-content-center text-center my-sm-1">
+            <div class="col-lg-12">
+              <h2 class="text-dark mb-0">Demphster Shefer </h2>
+              <p class="lead">Sub title isi dibagian sini</p>
+              <div class="pe-md-5 mb-5 justify-text mb-0">
+                ganti textnya disini jan yang lain
+                <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat error natus similique optio doloremque sint nostrum alias quis ipsa ad quasi hic, itaque animi quas maxime sunt debitis rem. Aspernatur?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, eos cumque provident, minima, eius delectus consectetur est saepe dicta at quos asperiores impedit sunt molestias corrupti. Voluptate nobis nihil iusto, asperiores laborum soluta odio perspiciatis veritatis, velit, voluptatem consectetur! Aspernatur necessitatibus, veritatis laboriosam dolores aut officiis, quod quam natus, cumque nihil delectus odio nam. Deleniti ex cupiditate eligendi ullam? Odio, quos! Quos earum voluptatibus voluptas laudantium dolorum sunt ex quibusdam optio consectetur tempora nam dolores, magnam facere dignissimos dolore tenetur magni laborum accusantium quis doloribus officiis! In aliquam non voluptates totam provident nam facilis. Sed nemo eveniet autem quas iste?
+                <br><br>
+
+                <div class=" col-12 my-auto d-flex justify-content-center">
+                  <a href="#">
+                    <img class="w-100 border-radius-lg shadow-lg" src="./assets/img/rumus.jpg" alt="Product Image">
+                  </a>
+                </div>
+                <br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, eos cumque provident, minima, eius delectus consectetur est saepe dicta at quos asperiores impedit sunt molestias corrupti. Voluptate nobis nihil iusto, asperiores laborum soluta odio perspiciatis veritatis, velit, voluptatem consectetur! Aspernatur necessitatibus, veritatis laboriosam dolores aut officiis, quod quam natus, cumque nihil delectus odio nam. Deleniti ex cupiditate eligendi ullam? Odio, quos! Quos earum voluptatibus voluptas laudantium dolorum sunt ex quibusdam optio consectetur tempora nam dolores, magnam facere dignissimos dolore tenetur magni laborum accusantium quis doloribus officiis! In aliquam non voluptates totam provident nam facilis. Sed nemo eveniet autem quas iste?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, eos cumque provident, minima, eius delectus consectetur est saepe dicta at quos asperiores impedit sunt molestias corrupti. Voluptate nobis nihil iusto, asperiores laborum soluta odio perspiciatis veritatis, velit, voluptatem consectetur! Aspernatur necessitatibus, veritatis laboriosam dolores aut officiis, quod quam natus, cumque nihil delectus odio nam. Deleniti ex cupiditate eligendi ullam? Odio, quos! Quos earum voluptatibus voluptas laudantium dolorum sunt ex quibusdam optio consectetur tempora nam dolores, magnam facere dignissimos dolore tenetur magni laborum accusantium quis doloribus officiis! In aliquam non voluptates totam provident nam facilis. Sed nemo eveniet autem quas iste?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- <section class="my-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7 col-12 my-auto">
+        <h3 class="text-gradient text-primary mb-0"> Apa Saja Gejala Down Syndrome </h3>
+        <h3>pada Anak?</h3>
+        <p class="pe-md-5 mb-4 justify-text">
+          Down syndrome atau sindrom Down adalah kondisi kelainan genetik yang disebabkan karena bayi memiliki tambahan salinan kromom ke-21. Kondisi cacat lahir yang satu ini mengakibatkan bayi mengalami keterlambatan pada perkembangan fisik bayi, mental, serta intelektualnya.
+<br><br>
+Meski kerap terlihat serupa, sebenarnya setiap bayi maupun anak-anak dengan Down syndrome memiliki kondisi fisik dan mental yang tidak selalu sama.
+
+Bahkan, gejala atau ciri-ciri Down syndrome atau sindrom Down bisa berbeda-beda pada setiap bayi dan anak-anak.
+
+        </p>
+        <div class="github-buttons">
+          <a href="https://www.creative-tim.com/product/material-kit-pro?ref=index-mk2" target="_blank" class="btn bg-gradient-primary mb-5 mb-sm-0">Baca Lebih Lanjut</a>
+          <div class="github-button">
+            <span></span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5 col-12 my-auto">
+        <a href="https://keenu.epizy.com">
+          <img class="w-100 border-radius-lg shadow-lg" src="./assets/img/Bayi-Syndrome.jpg" alt="Product Image">
+        </a>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+    <!-- <section class="my-5 position-relative bg-gradient-dark mx-n3" id="tentangKita">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 text-start mb-5 mt-5">
+        <h3 class="text-white z-index-1 position-relative">Tim Deadliner</h3>
+        <p class="text-white opacity-8 mb-0">Rebahan jalan ninjaku SKS metodeku.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6 col-12">
+        <div class="card card-profile mt-4">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-12 mt-n5">
+              <a href="javascript:;">
+                <div class="p-3 pe-md-0">
+                  <img class="w-100 border-radius-md shadow-lg" src="./assets/img/team-5.jpg" alt="image">
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-8 col-md-6 col-12 my-auto">
+              <div class="card-body ps-lg-0">
+                <h5 class="mb-0">Emma Junaedi</h5>
+                <h6 class="text-gradient text-primary">Dokter Internis</h6>
+                <p class="mb-0">Seorang Dokter yang sangat mencintai Pekerjaannya dan Pasangan Hidupnya.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-12">
+        <div class="card card-profile mt-lg-4 mt-5">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-12 mt-n5">
+              <a href="javascript:;">
+                <div class="p-3 pe-md-0">
+                  <img class="w-100 border-radius-md shadow-lg" src="./assets/img/bruce-mars.jpg" alt="image">
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-8 col-md-6 col-12 my-auto">
+              <div class="card-body ps-lg-0">
+                <h5 class="mb-0">Rianti Surya</h5>
+                <h6 class="text-gradient text-primary">Pacar Yusuf</h6>
+                <p class="mb-0">Seorang mahasiswa yang melayani majikan majikannya dan bucin dengan bambang.</p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </header>
-
-  <div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6  ">
-
-    <section class="my-5" id="DownSyndrome">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-7 col-12 my-auto">
-            <h3 class="text-gradient text-primary mb-0"> Apa itu Down Syndrome? </h3>
-            <p class="pe-md-5 mb-5 justify-text mb-0 text-lg text-bold text-dark ">
-              Down syndrome atau sindrom Down adalah kondisi kelainan genetik yang disebabkan karena bayi memiliki tambahan salinan kromom ke-21. Kondisi ini mengakibatkan bayi mengalami keterlambatan pada perkembangan fisik, mental, serta intelektualnya.
-              <br><br>
-              Meski kerap terlihat serupa, sebenarnya setiap bayi maupun anak-anak dengan Down syndrome memiliki kondisi fisik dan mental yang tidak selalu sama. Bahkan, gejala atau ciri-ciri Down syndrome atau sindrom Down bisa berbeda-beda pada setiap bayi dan anak-anak.
-
-            </p>
-            <div class="github-buttons">
-              <a href="tentang.php" target="_blank" class="btn bg-gradient-primary mb-5 mb-sm-0">Baca Lebih Lanjut</a>
-              <div class="github-button">
-                <span></span>
+    <div class="row mt-4 mb-5">
+      <div class="col-lg-6 col-12">
+        <div class="card card-profile mt-4 z-index-2">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-12 mt-n5">
+              <a href="javascript:;">
+                <div class="p-3 pe-md-0">
+                  <img class="w-100 border-radius-md shadow-lg" src="./assets/img/ivana-squares.jpg" alt="image">
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-8 col-md-6 col-12 my-auto">
+              <div class="card-body ps-lg-0">
+                <h5 class="mb-0">Yusuf</h5>
+                <h6 class="text-gradient text-primary">Pacar Yanti</h6>
+                <p class="mb-0">Dimana Bumi dipijak disitu saya tidur. bucin yanti</p>
               </div>
             </div>
-          </div>
-          <div class="col-md-5 col-12 my-auto">
-            <a href="#">
-              <img class="w-100 border-radius-lg shadow-lg" src="./assets/img/Bayi-Syndrome.jpg" alt="Product Image">
-            </a>
           </div>
         </div>
       </div>
-    </section>
-
-    <section class="pb-5 position-relative bg-gradient-dark mx-n3 " id="tentangKita">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 text-start mb-5 mt-5">
-            <h3 class="text-white z-index-1 position-relative">Tentang Kami</h3>
-            <p class="text-white opacity-8 mb-0">Penyelesaian Tugas Akhir Untuk Mendapatkan Gelar Sarjana.</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-6 col-12">
-            <div class="card card-profile mt-4">
-              <div class="row">
-                <div class="col-lg-4 col-md-6 col-12 mt-n5">
-                  <a href="javascript:;">
-                    <div class="p-3 pe-md-0">
-                      <!-- ganti gambar disini ganti bagian src nya dan taro gambar di folder assets/ image /  -->
-                      <img class="w-100 border-radius-md shadow-lg" src="./assets/img/team-5.jpg" alt="image">
-                    </div>
-                  </a>
+      <div class="col-lg-6 col-12">
+        <div class="card card-profile mt-lg-4 mt-5 z-index-2">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-12 mt-n5">
+              <a href="javascript:;">
+                <div class="p-3 pe-md-0">
+                  <img class="w-100 border-radius-md shadow-lg" src="./assets/img/Rizki.jpg" alt="image">
                 </div>
-                <div class="col-lg-8 col-md-6 col-12 my-auto">
-                  <div class="card-body ps-lg-0">
-                    <h5 class="mb-0">Rianti Surya Sukatma</h5>
-                    <h6 class="text-gradient text-primary">Penulis</h6>
-                    <p class="mb-0">Mahasiswi Teknik Informatika Universitas Singaperbangsa Karawang</p>
-                  </div>
-                </div>
-              </div>
+              </a>
             </div>
-          </div>
-          <div class="col-lg-6 col-12">
-            <div class="card card-profile mt-4">
-              <div class="row">
-                <div class="col-lg-4 col-md-6 col-12 mt-n5">
-                  <a href="javascript:;">
-                    <div class="p-3 pe-md-0">
-                      <!-- ganti gambar disini ganti bagian src nya dan taro gambar di folder assets/ image /  -->
-                      <img class="w-100 border-radius-md shadow-lg" src="./assets/img/ivana-squares.jpg" alt="image">
-                    </div>
-                  </a>
-                </div>
-                <div class="col-lg-8 col-md-6 col-12 my-auto">
-                  <div class="card-body ps-lg-0">
-                    <h5 class="mb-0">Rianti Surya Sukatma</h5>
-                    <h6 class="text-gradient text-primary">Penulis</h6>
-                    <p class="mb-0">Mahasiswi Teknik Informatika Universitas Singaperbangsa Karawang</p>
-                  </div>
-                </div>
+            <div class="col-lg-8 col-md-6 col-12 my-auto">
+              <div class="card-body ps-lg-0">
+                <h5 class="mb-0">M Rizki Nugroho</h5>
+                <h6 class="text-gradient text-primary">Software Engineer</h6>
+                <p class="mb-0">Seorang manusia nolep yang doyan rebahan dan ngoding.</p>
               </div>
             </div>
           </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </div>
+</section> -->
 
 
     <!-- -------   START PRE-FOOTER 2 - simple social line w/ title & 3 buttons    -------- -->
@@ -267,15 +336,15 @@
             <h6 class="text-sm">Pelayanan </h6>
             <ul class="flex-column ms-n3 nav">
               <li class="nav-item">
-                <a class="nav-link" href="#DownSyndrome"">
-                Mengenal Down Syndrome
-              </a>
-            </li>
+                <a class="nav-link" href="./index.php#DownSyndrome">
+                  Mengenal Down Syndrome
+                </a>
+              </li>
 
-            <li class=" nav-item">
-                  <a class="nav-link" href="./pages/konsultasi.php">
-                    Konsultasi Dengan Ahli
-                  </a>
+              <li class="nav-item">
+                <a class="nav-link" href="konsultasi.php">
+                  Konsultasi Dengan Ahli
+                </a>
               </li>
 
             </ul>
@@ -287,12 +356,12 @@
             <h6 class="text-sm">Company</h6>
             <ul class="flex-column ms-n3 nav">
               <li class="nav-item">
-                <a class="nav-link" href="#tentangKita">
+                <a class="nav-link" href="./index.php#tentangKita">
                   Tentang Kita
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#home">
+                <a class="nav-link" href="./index.php">
                   Potads
                 </a>
               </li>

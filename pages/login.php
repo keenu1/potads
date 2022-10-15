@@ -43,7 +43,7 @@ session_start();
   <nav class="navbar navbar-expand-lg position-absolute top-0 z-index-3 w-100 shadow-none my-3  navbar-transparent ">
     <div class="container">
       <a class="navbar-brand  text-white " href="../index.php" rel="tooltip" title="Designed by Rizki" data-placement="bottom">
-        Potads
+        Beranda
       </a>
       <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon mt-2">
@@ -78,12 +78,12 @@ session_start();
                 <!-- <a href="./pages/author.html" class="dropdown-item border-radius-md">
                   <span>Author</span>
                 </a> -->
-                <h6 class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1 mt-3">
+                <!-- <h6 class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1 mt-3">
                   Akun
                 </h6>
                 <a href="login.php" class="dropdown-item border-radius-md">
                   <span>Masuk</span>
-                </a>
+                </a> -->
               </div>
 
               <div class="d-lg-none">
@@ -98,24 +98,30 @@ session_start();
                   <span>Tentang Kita</span>
                 </a>
 
-                <h6 class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1 mt-3">
+                <!-- <h6 class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1 mt-3">
                   Akun
                 </h6>
                 <a href="login.php" class="dropdown-item border-radius-md">
                   <span>Masuk</span>
-                </a>
+                </a> -->
 
               </div>
             </div>
           </li>
-          <li class="nav-item dropdown dropdown-hover mx-2">
+          <!-- <li class="nav-item dropdown dropdown-hover mx-2">
             <a href="./konsultasi.php" class="nav-link ps-2 d-flex cursor-pointer align-items-center" aria-expanded="false">
               <!-- <i class="material-icons opacity-6 me-2 text-md">dashboard</i> -->
-              Konsultasi
+          <!-- Konsultasi
             </a>
-          </li>
+          </li> -->
+          <!-- <li class="nav-item dropdown dropdown-hover mx-2">
+            <a href="./sign-up.php" class="nav-link ps-2 d-flex cursor-pointer align-items-center" aria-expanded="false">
+              <!-- <i class="material-icons opacity-6 me-2 text-md">dashboard</i> -->
+          <!-- Daftar
+            </a>
+          </li> -->
           <li class="nav-item my-auto ms-3 ms-lg-0">
-            <a href="sign-up.php" class="btn btn-sm  bg-gradient-primary  mb-0 me-1 mt-2 mt-md-0">Bergabung Bersama Potads</a>
+            <a href="https://potads.or.id/" class="btn btn-sm  bg-gradient-primary  mb-0 me-1 mt-2 mt-md-0">Bergabung Bersama Potads</a>
           </li>
         </ul>
       </div>
@@ -156,7 +162,7 @@ session_start();
                   <button type="submit" class="btn bg-gradient-primary w-100 my-4 mb-2">Log in</button>
                 </div>
                 <p class="mt-4 text-sm text-center">
-                  Apakah Anda Belum Bergabung ? <a href="sign-up.php" class="text-primary">Daftar</a>
+                  Apakah Anda Belum Daftar? <a href="sign-up.php" class="text-primary">Daftar</a>
                 </p>
               </form>
             </div>

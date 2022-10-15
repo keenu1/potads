@@ -1,6 +1,20 @@
 <?php
 session_start();
 include 'koneksi.php';
+//identitas
+$nama_ayah = $_POST['nama_ayah'];
+$nama_ibu = $_POST['nama_ibu'];
+$kota_domisili = $_POST['kota_domisili'];
+$nomor_hp = $_POST['no_hp'];
+$nama_pasien = $_POST['nama'];
+$jenis_kelamin = $_POST['jenis_kelamin'];
+$tanggal_lahir = $_POST['tanggal_lahir'];
+$umur = $_POST['umur'];
+
+//proses input ke data pasien 
+$query = mysqli_query($koneksi, "INSERT INTO pasien (nama_ayah, nama_ibu, kota_domisili, nomor_hp, nama_pasien, jenis_kelamin, tanggal_lahir, umur) VALUES ('$nama_ayah','$nama_ibu','$kota_domisili','$nomor_hp', '$nama_pasien','$jenis_kelamin', '$tanggal_lahir', '$umur')")
+    or die(mysqli_error($koneksi));
+
 $query = mysqli_query($koneksi, "SELECT COUNT(*) as totalgejala FROM gejala")
     or die(mysqli_error($koneksi));
 $jumlah_bobot = array();
@@ -64,6 +78,7 @@ if ($data = mysqli_fetch_array($query)) {
     $_SESSION['nama_penyakit_terindikasi'] = $nama_penyakit_yang_terdekat;
     $_SESSION['konsul'] = "ya ada";
     header("Location:hasilkonsultasi.php");
+    echo "berhasil";
 } else {
     echo "gagal";
 }

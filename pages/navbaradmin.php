@@ -3,8 +3,8 @@
         <div class="col-12">
             <nav class="navbar navbar-expand-lg  blur border-radius-xl top-0 z-index-fixed shadow position-absolute my-3 py-2 start-0 end-0 mx-4">
                 <div class="container-fluid px-0">
-                    <a class="navbar-brand font-weight-bolder ms-sm-3" href="#home" rel="tooltip" title="Design by Rizki" data-placement="bottom">
-                        Potads
+                    <a class="navbar-brand font-weight-bolder ms-sm-3" href="../index.php#home" rel="tooltip" title="Design by Rizki" data-placement="bottom">
+                        Universitas Singaperbangsa Karawang
                     </a>
                     <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon mt-2">
@@ -26,6 +26,12 @@
                                         <h6 class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1">
                                             Halaman
                                         </h6>
+                                        <a href="../index.php" class="dropdown-item border-radius-md">
+                                            <span>Beranda</span>
+                                        </a>
+                                        <a href="./konsultasi.php" class="dropdown-item border-radius-md">
+                                            <span>Konsultasi</span>
+                                        </a>
                                         <a href="admin.php" class="dropdown-item border-radius-md">
                                             <span>Admin</span>
                                         </a>
@@ -38,23 +44,31 @@
                                         <a href="adminakun.php" class="dropdown-item border-radius-md">
                                             <span>Data User</span>
                                         </a>
+                                        <a href="adminpasien.php" class="dropdown-item border-radius-md">
+                                            <span> Data Pasien</span>
+                                        </a>
                                         <!-- <a
                                         <!-- <a href="./pages/author.html" class="dropdown-item border-radius-md">
-                <span>Author</span>
-              </a> -->
-                                        <h6 class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1 mt-3">
+                                        <span>Author</span>
+                                        </a> -->
+                                        <!-- <h6 class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1 mt-3">
                                             Akun
                                         </h6>
                                         <a href="phplogout.php" class="dropdown-item border-radius-md">
                                             <span>Keluar</span>
-                                        </a>
+                                        </a> -->
                                     </div>
 
                                     <div class="d-lg-none">
                                         <h6 class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1">
                                             Halaman
                                         </h6>
-
+                                        <a href="../index.php" class="dropdown-item border-radius-md">
+                                            <span>Beranda</span>
+                                        </a>
+                                        <a href="./konsultasi.php" class="dropdown-item border-radius-md">
+                                            <span>Konsultasi</span>
+                                        </a>
                                         <a href="admin.php" class="dropdown-item border-radius-md">
                                             <span>Admin</span>
                                         </a>
@@ -67,13 +81,16 @@
                                         <a href="adminakun.php" class="dropdown-item border-radius-md">
                                             <span>Data User</span>
                                         </a>
+                                        <a href="adminpasien.php" class="dropdown-item border-radius-md">
+                                            <span> Data Pasien</span>
+                                        </a>
 
-                                        <h6 class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1 mt-3">
+                                        <!-- <h6 class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1 mt-3">
                                             Akun
                                         </h6>
                                         <a href="phplogout.php" class="dropdown-item border-radius-md">
                                             <span>Keluar</span>
-                                        </a>
+                                        </a> -->
 
                                     </div>
 
@@ -81,10 +98,16 @@
                             </li>
 
 
-                            <li class="nav-item dropdown dropdown-hover mx-2">
+                            <!-- <li class="nav-item dropdown dropdown-hover mx-2">
                                 <a href="konsultasi.php" class="nav-link ps-2 d-flex cursor-pointer align-items-center" aria-expanded="false">
                                     <!-- <i class="material-icons opacity-6 me-2 text-md">dashboard</i> -->
-                                    Konsultasi
+                            <!-- Konsultasi
+                            </a>
+                            </li>  -->
+                            <li class="nav-item dropdown dropdown-hover mx-2">
+                                <a href="./phplogout.php" class="nav-link ps-2 d-flex cursor-pointer align-items-center" aria-expanded="false">
+                                    <!-- <i class="material-icons opacity-6 me-2 text-md">dashboard</i> -->
+                                    Keluar
                                 </a>
                             </li>
                             <li class="nav-item my-auto ms-3 ms-lg-0">
