@@ -107,7 +107,7 @@ foreach ($array_gejala_pasien as $data) {
 
 }
 
-//cek array yang akan dipake
+//cek array yang akan dipake di rumus demspter shafer
 print_r($array_gejala_pasien);
 echo "<br><br>";
 print_r($array_float_gejala_bobot_pasien);
@@ -124,6 +124,7 @@ echo "<br><br>";
 //jumlah gejala
 $jumlah_gejala_pasien = count($array_gejala_pasien);
 
+//inisialisais variabel
 $v1;
 $v2;
 $v3;
@@ -146,8 +147,9 @@ $bobot_kombinasi;
 $var1 = array();
 $var2 = array();
 
+// RUMUS DEMSPTER SHAFER ***
 
-
+$gejala_database 
 for ($i = 0; $i < $jumlah_gejala_pasien - 1; $i++) {
 
     if ($var1 == null) {
@@ -345,7 +347,7 @@ echo "<br>" . $_SESSION['nama_penyakit_terindikasi'] . "<br>";
 //kirim hasil hitung ke session hasil_bobot akhir
 
 $_SESSION['konsul'] = "ya ada";
-// header("Location:hasilkonsultasi.php");
+header("Location:hasilkonsultasi.php");
 
 
 
