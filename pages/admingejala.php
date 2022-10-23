@@ -67,6 +67,18 @@ $kode_gejala = 'aa';
                 <label class="form-label">Bobot</label>
                 <input type="number" step="0.01" class=" form-control" placeholder="" aria-label="bobot" name="bobot">
               </div>
+              <div class="input-group input-group-dynamic mb-4">
+                <label class="form-label">P01</label>
+                <input type="number" class=" form-control" placeholder="" aria-label="bobot" name="p01">
+              </div>
+              <div class="input-group input-group-dynamic mb-4">
+                <label class="form-label">P02</label>
+                <input type="number" class=" form-control" placeholder="" aria-label="bobot" name="p02">
+              </div>
+              <div class="input-group input-group-dynamic mb-4">
+                <label class="form-label">P03</label>
+                <input type="number" class=" form-control" placeholder="" aria-label="bobot" name="p03">
+              </div>
             </div>
 
         </div>
@@ -112,7 +124,7 @@ $kode_gejala = 'aa';
       <div class="container">
         <div class="row">
           <div class="row justify-content-center text-center my-sm-1">
-            <div class="col-lg-12">
+            <div class="col-lg-12 ">
               <h2 class="text-dark mb-0">Data Gejala </h2>
               <p class="lead">Silahkan Input dan Edit bobot nilai gejala dan penyakit. </p>
               <div class="table-responsive">
@@ -122,7 +134,10 @@ $kode_gejala = 'aa';
                       <th scope="col">No</th>
                       <th scope="col">Kode Gejala</th>
                       <th scope="col">Nama Gejala</th>
-                      <th scope="col">Bobot</th>
+                      <th scope="col">bobot</th>
+                      <th scope="col">p01</th>
+                      <th scope="col">p02</th>
+                      <th scope="col">p03</th>
                       <th scope="col">Aksi</th>
                     </tr>
                   </thead>
@@ -137,7 +152,11 @@ $kode_gejala = 'aa';
                         <th class="text-center" scope="row"><?php echo $no ?></th>
                         <th class="text-center" scope="row"><?php echo $data['kode_gejala'] ?></th>
                         <td class="text-start"><?php echo $data['nama_gejala'] ?></td>
+
                         <td class="text-center"><?php echo $data['bobot'] ?></td>
+                        <td class="text-center"><?php echo $data['p01'] ?></td>
+                        <td class="text-center"><?php echo $data['p02'] ?></td>
+                        <td class="text-center"><?php echo $data['p03'] ?></td>
                         <td class="text-center">
                           <a href="phpadmingejalahapus.php?kode_gejala=<?php echo $data['kode_gejala'] ?>" onclick="return confirm('Anda yakin akan menghapus data ini?')">
                             <button type="button" class="btn btn-danger btn-sm w-auto me-1 mb-0 pt-2">
@@ -197,6 +216,18 @@ $kode_gejala = 'aa';
                 <div class="input-group input-group-static mb-4">
                   <label>Bobot</label>
                   <input type="number" step="0.01" class=" form-control" placeholder="" aria-label="bobot" name="bobot" value="<?php echo  $data['bobot'] ?>">
+                </div>
+                <div class="input-group input-group-dynamic mb-4">
+                  <label class="form-label">P01</label>
+                  <input type="number" class=" form-control" placeholder="" aria-label="bobot" name="p01">
+                </div>
+                <div class="input-group input-group-dynamic mb-4">
+                  <label class="form-label">P02</label>
+                  <input type="number" class=" form-control" placeholder="" aria-label="bobot" name="p02">
+                </div>
+                <div class="input-group input-group-dynamic mb-4">
+                  <label class="form-label">P03</label>
+                  <input type="number" class=" form-control" placeholder="" aria-label="bobot" name="p03">
                 </div>
               </div>
 
@@ -463,4 +494,5 @@ $kode_gejala = 'aa';
     }
   </script>
 </body>
+
 </html>

@@ -156,40 +156,6 @@ unset($_SESSION["konsul"]);
                           </div>
                       </div>
                     </div>
-                    <!-- <div class="row text-center py-1">
-                      <div class="col-lg mx-auto text-start">
-                        <?php
-                        // include 'koneksi.php';
-                        // $query = mysqli_query($koneksi, "SELECT * FROM pasien") or die(mysqli_error($koneksi));
-                        // $i = 1;
-                        // foreach ($query as $data) {
-                        ?>
-                          <div class="row text-center py-2">
-                            <div class="col-lg mx-auto text-start">
-                              <label>Apakah Ananda Memiliki Gejala <?php //echo $data['nama_gejala'] 
-                                                                    ?> ?</label>
-                              <div class="form-check">
-                                <input class="form-check-input" type="radio" name="orangtua<?php //echo $i 
-                                                                                            ?>" id="bt1" value="<?php echo $data['bobot'] ?>">
-                                <label class="form-check-label" for="flexRadioDefault3">
-                                  Ya
-                                </label>
-                              </div>
-                              <div class="form-check">
-                                <input class="form-check-input" type="radio" name="orangtua<?php //echo $i 
-                                                                                            ?>" id="bt1" value="0" checked>
-                                <label class="form-check-label" for="flexRadioDefault3">
-                                  Tidak
-                                </label>
-                              </div>
-                            </div>
-                          </div>
-                        <?php
-                        // $i++;
-                        // }
-                        ?>
-                      </div>
-                    </div> -->
                   </div>
                 </div>
               </div>
@@ -227,15 +193,15 @@ unset($_SESSION["konsul"]);
                         ?>
                           <div class="row text-center py-1">
                             <div class="col-lg mx-auto text-start">
-                              <label>Apakah Anak Anda memiliki gejala <?php echo $data['nama_gejala'] ?> ?</label>
+                              <label><?php echo $i ?>. Apakah Anak Anda memiliki gejala <?php echo $data['nama_gejala'] ?> ?</label>
                               <div class="form-check">
-                                <input class="form-check-input" type="radio" name="bayi<?php echo $i ?>" id="bt1" value="<?php echo $data['bobot'] ?>">
+                                <input class="form-check-input" type="radio" name="<?php echo $data['kode_gejala'] ?>" id="bt1" value="<?php echo $data['kode_gejala'] ?>">
                                 <label class="form-check-label" for="flexRadioDefault3">
                                   Ya
                                 </label>
                               </div>
                               <div class="form-check">
-                                <input class="form-check-input" type="radio" name="bayi<?php echo $i ?>" id="bt1" value="0" checked>
+                                <input class="form-check-input" type="radio" name="<?php echo $data['kode_gejala'] ?>" id="bt1" value="0" checked>
                                 <label class="form-check-label" for="flexRadioDefault3">
                                   Tidak
                                 </label>

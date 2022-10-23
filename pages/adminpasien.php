@@ -171,7 +171,13 @@ $kode_gejala = 'aa';
                                     </tbody>
                                 </table>
                             </div>
-                            <button type="button" class="btn bg-gradient-primary w-auto me-auto float-end mt-4" data-bs-toggle="modal" data-bs-target="#exampleModal">Tambah</button>
+                            <!-- <button type="button" class="btn bg-gradient-primary w-auto me-auto float-end mt-4" data-bs-toggle="modal" data-bs-target="#exampleModal">Tambah</button> -->
+                            <div class="github-buttons">
+                                <a href="./phpadminpasienhapussemua.php" class="btn btn-danger w-auto me-auto float-end mt-4">Hapus Semua</a>
+                                <div class="github-button">
+                                    <span></span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
