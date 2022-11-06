@@ -3,7 +3,7 @@
         <div class="col-12">
             <nav class="navbar navbar-expand-lg  blur border-radius-xl top-0 z-index-fixed shadow position-absolute my-3 py-2 start-0 end-0 mx-4">
                 <div class="container-fluid px-0">
-                    <a class="navbar-brand font-weight-bolder ms-sm-3" href="../index.php#home" rel="tooltip" title="Design by Rizki" data-placement="bottom">
+                    <a class="navbar-brand font-weight-bolder ms-sm-3" href="../index.php#home" rel="tooltip" data-placement="bottom">
                         Universitas Singaperbangsa Karawang
                     </a>
                     <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,9 +29,9 @@
                                         <a href="../index.php" class="dropdown-item border-radius-md">
                                             <span>Beranda</span>
                                         </a>
-                                        <a href="./konsultasi.php" class="dropdown-item border-radius-md">
+                                        <!-- <a href="./konsultasi.php" class="dropdown-item border-radius-md">
                                             <span>Konsultasi</span>
-                                        </a>
+                                        </a> -->
                                         <a href="admin.php" class="dropdown-item border-radius-md">
                                             <span>Admin</span>
                                         </a>
@@ -42,10 +42,13 @@
                                             <span>Data Penyakit</span>
                                         </a>
                                         <a href="adminakun.php" class="dropdown-item border-radius-md">
-                                            <span>Data User</span>
+                                            <span>Data Admin</span>
                                         </a>
                                         <a href="adminpasien.php" class="dropdown-item border-radius-md">
                                             <span> Data Pasien</span>
+                                        </a>
+                                        <a href="adminbasispengetahuan.php" class="dropdown-item border-radius-md">
+                                            <span> Data Basis Pengetahuan</span>
                                         </a>
                                         <!-- <a
                                         <!-- <a href="./pages/author.html" class="dropdown-item border-radius-md">
@@ -79,7 +82,7 @@
                                             <span>Data Penyakit</span>
                                         </a>
                                         <a href="adminakun.php" class="dropdown-item border-radius-md">
-                                            <span>Data User</span>
+                                            <span>Data Admin</span>
                                         </a>
                                         <a href="adminpasien.php" class="dropdown-item border-radius-md">
                                             <span> Data Pasien</span>

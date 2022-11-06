@@ -42,7 +42,7 @@ session_start();
   <!-- Navbar Transparent -->
   <nav class="navbar navbar-expand-lg position-absolute top-0 z-index-3 w-100 shadow-none my-3  navbar-transparent ">
     <div class="container">
-      <a class="navbar-brand  text-white " href="../index.php" rel="tooltip" title="Designed by Rizki" data-placement="bottom">
+      <a class="navbar-brand  text-white " href="../index.php" rel="tooltip" data-placement="bottom">
         Beranda
       </a>
       <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
@@ -180,25 +180,25 @@ session_start();
       <div class="container">
         <div class="row align-items-center justify-content-lg-between">
           <div class="col-12 col-md-6 my-auto">
-            <div class="copyright text-center text-sm text-white text-lg-start">
+            <!-- <div class="copyright text-center text-sm text-white text-lg-start">
               © <script>
                 document.write(new Date().getFullYear())
               </script>,
               made with <i class="fa fa-heart" aria-hidden="true"></i> by
-              <a href="http://keenu.epizy.com" class="font-weight-bold text-white" target="_blank">Rizki</a>.
-            </div>
+              <a href="http://keenu.epizy.com" class="font-weight-bold text-white" target="_blank"></a>.
+            </div> -->
           </div>
           <div class="col-12 col-md-6">
             <ul class="nav nav-footer justify-content-center justify-content-lg-end">
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a href="../index.php" class="nav-link text-white">Home</a>
-              </li>
-              <li class="nav-item">
+              </li> -->
+              <!-- <li class="nav-item">
                 <a href="../index.php#tentangKita" class="nav-link text-white"">Tentang Kita</a>
-              </li>
-              <li class=" nav-item">
+              </li> -->
+              <!-- <li class=" nav-item">
                   <a href="https://www.creative-tim.com/blog" class="nav-link text-white" target="_blank">Down Syndrome</a>
-              </li>
+              </li> -->
             </ul>
           </div>
         </div>

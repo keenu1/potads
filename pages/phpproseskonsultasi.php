@@ -103,11 +103,9 @@ foreach ($array_gejala_pasien as $data) {
     array_push($array_p03_gejala_pasien, $int_nilai);
     //cek nilainya bener apa gk
     // echo $resultstring . ' p03 ';
-
-
 }
 
-//cek array yang akan dipake di rumus demspter shafer
+//cek array yang akan dipake
 print_r($array_gejala_pasien);
 echo "<br><br>";
 print_r($array_float_gejala_bobot_pasien);
@@ -124,7 +122,8 @@ echo "<br><br>";
 //jumlah gejala
 $jumlah_gejala_pasien = count($array_gejala_pasien);
 
-//inisialisais variabel
+
+//inisialisasi variabel
 $v1;
 $v2;
 $v3;
@@ -147,9 +146,8 @@ $bobot_kombinasi;
 $var1 = array();
 $var2 = array();
 
-// RUMUS DEMSPTER SHAFER ***
 
-$gejala_database 
+// ******************************** RUMUS DEMSPTER SHAFER NYA DISINI SEPERTI APA ???? ***********************************************
 for ($i = 0; $i < $jumlah_gejala_pasien - 1; $i++) {
 
     if ($var1 == null) {
@@ -158,7 +156,6 @@ for ($i = 0; $i < $jumlah_gejala_pasien - 1; $i++) {
         array_push($var1, $array_p03_gejala_pasien[$i]);
     } else {
     }
-
 
     array_push($var2, $array_p01_gejala_pasien[$i + 1]);
     array_push($var2, $array_p02_gejala_pasien[$i + 1]);

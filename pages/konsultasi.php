@@ -12,7 +12,7 @@ unset($_SESSION["konsul"]);
   <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/logo.jpg">
   <link rel="icon" type="image/jpg" href="../assets/img/logo.jpg">
 
-  <title>Potads</title>
+  <title>Sistem Pakar</title>
 
   <!--     Fonts and icons     -->
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
@@ -74,7 +74,11 @@ unset($_SESSION["konsul"]);
                   <div class="container border-bottom">
                     <div class="row justify-space-between py-3">
                       <div class="col-lg me-auto">
-                        <form role="form" id="contact-form " method="post" action="phpproseskonsultasi.php" autocomplete="off">
+
+
+
+
+                        <form role="form" id="contact-form " method="post" action="phprumus.php" autocomplete="off">
 
                           <div class="row text-center py-2 ">
                             <div class="col-lg mx-auto">
@@ -101,7 +105,7 @@ unset($_SESSION["konsul"]);
                             <div class="col-lg mx-auto">
                               <div class="input-group input-group-static">
                                 <label>Kota Domisili Saat Ini. </label>
-                                <input class="form-control" placeholder="eg.Bekasi type=" text" name="kota_domisili" required>
+                                <input class="form-control" placeholder="eg.Karawang type=" text" name="kota_domisili" required>
                               </div>
                             </div>
                           </div>
@@ -110,7 +114,7 @@ unset($_SESSION["konsul"]);
                             <div class="col-lg mx-auto">
                               <div class="input-group input-group-static">
                                 <label>Nomor Hp Orang Tua Ananda (Ayah/Ibu) </label>
-                                <input class="form-control" placeholder="eg. 081111111111" type="text" name="no_hp" required>
+                                <input class="form-control" placeholder="eg. 08xxx" type="text" name="no_hp" required>
                               </div>
                             </div>
                           </div>
@@ -149,8 +153,42 @@ unset($_SESSION["konsul"]);
                           <div class="row text-center py-2 ">
                             <div class="col-lg mx-auto">
                               <div class="input-group input-group-static">
-                                <label>Berapa Umur Ananda </label>
-                                <input class="form-control" placeholder="eg. putri kalia" type="text" name="umur" required>
+                                <label>Berapa Umur Ananda </label><br>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="umur" id="umurunder1" value="<1" required>
+                                  <label class="form-check-label" for="umurunder1">
+                                    < 1 Tahun </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="umur" id="umur1" value="1" required>
+                                  <label class="form-check-label" for="umur1">
+                                    1 Tahun
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="umur" id="umur2" value="2" required>
+                                  <label class="form-check-label" for="umur2">
+                                    2 Tahun
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="umur" id="umur3" value="3" required>
+                                  <label class="form-check-label" for="umur3">
+                                    3 Tahun
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="umur" id="umur4" value="4" required>
+                                  <label class="form-check-label" for="umur4">
+                                    4 Tahun
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="umur" id="umur5" value="5" required>
+                                  <label class="form-check-label" for="umur5">
+                                    5 Tahun
+                                  </label>
+                                </div>
                               </div>
                             </div>
                           </div>
@@ -195,28 +233,27 @@ unset($_SESSION["konsul"]);
                             <div class="col-lg mx-auto text-start">
                               <label><?php echo $i ?>. Apakah Anak Anda memiliki gejala <?php echo $data['nama_gejala'] ?> ?</label>
                               <div class="form-check">
-                                <input class="form-check-input" type="radio" name="<?php echo $data['kode_gejala'] ?>" id="bt1" value="<?php echo $data['kode_gejala'] ?>">
-                                <label class="form-check-label" for="flexRadioDefault3">
+                                <input class="form-check-input" type="radio" name="<?php echo $data['kode_gejala'] ?>" id="<?php echo $data['kode_gejala'] ?>ya" value="<?php echo $data['kode_gejala'] ?>">
+                                <label class="form-check-label" for="<?php echo $data['kode_gejala'] ?>ya">
                                   Ya
                                 </label>
                               </div>
                               <div class="form-check">
-                                <input class="form-check-input" type="radio" name="<?php echo $data['kode_gejala'] ?>" id="bt1" value="0" checked>
-                                <label class="form-check-label" for="flexRadioDefault3">
+                                <input class="form-check-input" type="radio" name="<?php echo $data['kode_gejala'] ?>" id="<?php echo $data['kode_gejala'] ?>tidak" value="tidak" checked>
+                                <label class="form-check-label" for="<?php echo $data['kode_gejala'] ?>tidak">
                                   Tidak
                                 </label>
                               </div>
                             </div>
-                          </div>
-                        <?php
+                          <?php
                           $i++;
                         }
-                        ?>
+                          ?>
+                          </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
 
     </section>
 
@@ -382,9 +419,9 @@ Bahkan, gejala atau ciri-ciri Down syndrome atau sindrom Down bisa berbeda-beda 
             <a href="https://www.creative-tim.com/product/material-kit">
               <img src="../assets/img/logo.png" class="mb-3 footer-logo" alt="main_logo">
             </a>
-            <h6 class="font-weight-bolder mb-4">Potads</h6>
+            <h6 class="font-weight-bolder mb-4">Sistem Pakar</h6>
           </div>
-          <div>
+          <!-- <div>
             <ul class="d-flex flex-row ms-n3 nav">
               <li class="nav-item">
                 <a class="nav-link pe-1" href="https://www.facebook.com/CreativeTim" target="_blank">
@@ -417,7 +454,7 @@ Bahkan, gejala atau ciri-ciri Down syndrome atau sindrom Down bisa berbeda-beda 
                 </a>
               </li>
             </ul>
-          </div>
+          </div> -->
         </div>
 
 
@@ -524,13 +561,13 @@ Bahkan, gejala atau ciri-ciri Down syndrome atau sindrom Down bisa berbeda-beda 
         </div>
 
         <div class="col-12">
-          <div class="text-center">
+          <!-- <div class="text-center">
             <p class="text-dark my-4 text-sm font-weight-normal">
               All rights reserved. Copyright © <script>
                 document.write(new Date().getFullYear())
               </script><a href="http://keenu.epizy.com/" target="_blank"> Rizki</a>.
             </p>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>

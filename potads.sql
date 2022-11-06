@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 23 Okt 2022 pada 16.37
+-- Waktu pembuatan: 06 Nov 2022 pada 05.34
 -- Versi server: 10.4.22-MariaDB
 -- Versi PHP: 8.1.1
 
@@ -74,152 +74,36 @@ CREATE TABLE `pasien` (
   `kota_domisili` text DEFAULT NULL,
   `nama_pasien` text DEFAULT NULL,
   `tanggal_lahir` text DEFAULT NULL,
-  `umur` text DEFAULT NULL
+  `umur` text DEFAULT NULL,
+  `hasil_konsultasi` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `pengetahuan`
+--
+
+CREATE TABLE `pengetahuan` (
+  `kode_penyakit` varchar(250) NOT NULL,
+  `nama_penyakit` varchar(250) NOT NULL,
+  `deskripsi_penyakit` text NOT NULL,
+  `solusi_penyakit` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `pasien`
+-- Dumping data untuk tabel `pengetahuan`
 --
 
-INSERT INTO `pasien` (`id_pasien`, `nama_ayah`, `nama_ibu`, `nomor_hp`, `jenis_kelamin`, `kota_domisili`, `nama_pasien`, `tanggal_lahir`, `umur`) VALUES
-(32, 'azz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(33, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(34, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(35, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(36, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(37, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(38, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(39, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(40, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(41, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(42, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(43, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(44, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(45, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(46, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(47, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(48, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(49, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(50, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(51, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(52, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(53, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(54, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(55, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(56, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(57, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(58, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(59, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(60, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(61, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(62, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(63, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(64, 'zz', 'zz', 'zz', 'Laki-Laki', 'z', 'z', '2022-10-03', 'zz'),
-(65, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(66, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(67, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'z', '2022-10-04', 'zz'),
-(68, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'z', '2022-10-04', 'zz'),
-(69, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'z', '2022-10-04', 'zz'),
-(70, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'z', '2022-10-04', 'zz'),
-(71, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'z', '2022-10-04', 'zz'),
-(72, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'z', '2022-10-04', 'zz'),
-(73, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'z', '2022-10-04', 'zz'),
-(74, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'z', '2022-10-04', 'zz'),
-(75, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'z', '2022-10-04', 'zz'),
-(76, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'z', '2022-10-04', 'zz'),
-(77, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'z', '2022-10-04', 'zz'),
-(78, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'z', '2022-10-04', 'zz'),
-(79, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'z', '2022-10-04', 'zz'),
-(80, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'z', '2022-10-04', 'zz'),
-(81, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-01', 'zz'),
-(82, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-03', 'zz'),
-(83, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-03', 'zz'),
-(84, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-03', 'zz'),
-(85, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-03', 'zz'),
-(86, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-03', 'zz'),
-(87, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-03', 'zz'),
-(88, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-03', 'zz'),
-(89, '', '', '', '', '', '', '', ''),
-(90, 'z', 'z', 'z', 'Laki-Laki', 'z', 'z', '2022-10-31', 'z'),
-(91, 'z', 'zz', 'zz', 'Laki-Laki', 'zz', 'z', '2022-10-31', 'zz'),
-(92, 'z', 'zz', 'zz', 'Laki-Laki', 'zz', 'z', '2022-10-31', 'zz'),
-(93, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(94, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(95, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(96, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(97, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(98, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(99, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(100, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(101, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(102, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(103, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(104, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(105, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(106, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(107, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(108, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(109, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(110, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(111, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(112, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(113, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(114, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(115, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(116, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(117, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(118, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(119, 'zz', 'zz', 'z', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zzz'),
-(120, 'zz', 'zz', 'z', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zzz'),
-(121, 'zz', 'zz', 'z', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zzz'),
-(122, 'zz', 'zz', 'z', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zzz'),
-(123, 'zz', 'zz', 'z', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zzz'),
-(124, 'zz', 'zz', 'z', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zzz'),
-(125, 'zz', 'zz', 'z', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zzz'),
-(126, 'zz', 'zz', 'z', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zzz'),
-(127, 'zz', 'zz', 'z', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zzz'),
-(128, 'zz', 'zz', 'z', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zzz'),
-(129, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(130, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(131, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(132, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(133, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(134, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(135, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(136, 'zz', 'zz', 'zz', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(137, 'zz', 'zzz', 'z', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(138, 'zz', 'zzz', 'z', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(139, 'zz', 'zzz', 'z', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(140, 'zz', 'zzz', 'z', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(141, 'zz', 'zzz', 'z', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(142, 'zz', 'zzz', 'z', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(143, '', '', '', '', '', '', '', ''),
-(144, '', '', '', '', '', '', '', ''),
-(145, 'zz', 'zzz', 'z', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(146, 'zz', 'zzz', 'z', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(147, 'zz', 'zzz', 'z', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(148, 'zz', 'zzz', 'z', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(149, 'zz', 'zzz', 'z', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(150, 'zz', 'zzz', 'z', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(151, 'zz', 'zzz', 'z', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(152, 'zz', 'zzz', 'z', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(153, 'zz', 'zzz', 'z', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(154, 'zz', 'zzz', 'z', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(155, 'zz', 'zzz', 'z', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(156, 'zz', 'zzz', 'z', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(157, 'zz', 'zzz', 'z', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(158, 'zz', 'zzz', 'z', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(159, 'zz', 'zzz', 'z', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(160, 'zz', 'zzz', 'z', 'Laki-Laki', 'zz', 'zz', '2022-10-31', 'zz'),
-(161, 'zz', 'zz', 'z', 'Laki-Laki', 'zz', 'z', '2022-10-31', 'zz'),
-(162, 'zz', 'zz', 'z', 'Laki-Laki', 'zz', 'z', '2022-10-31', 'zz'),
-(163, 'z', 'z', 'z', 'Laki-Laki', 'z', 'z', '2022-10-31', 'z'),
-(164, 'z', 'z', 'z', 'Laki-Laki', 'z', 'z', '2022-10-31', 'z'),
-(165, 'z', 'z', 'z', 'Laki-Laki', 'z', 'z', '2022-10-31', 'z'),
-(166, 'z', 'z', 'z', 'Laki-Laki', 'z', 'z', '2022-10-31', 'z'),
-(167, 'z', 'z', 'z', 'Laki-Laki', 'z', 'z', '2022-10-31', 'z'),
-(168, 'z', 'z', 'z', 'Laki-Laki', 'z', 'z', '2022-10-31', 'z'),
-(169, 'z', 'z', 'z', 'Laki-Laki', 'z', 'z', '2022-10-31', 'z');
+INSERT INTO `pengetahuan` (`kode_penyakit`, `nama_penyakit`, `deskripsi_penyakit`, `solusi_penyakit`) VALUES
+('P01', 'Trisomi 21', 'Sindrom Down juga disebut sebagai Trisomi 21. Salinan ekstra ini mengubah cara tubuh dan otak bayi berkembang, yang dapat menyebabkan tantangan mental dan fisik bagi bayi.', 'Dengan melakukan Fisioterapi. Dengan begitu, penderita Down Syndrome dapat melatih tubuhnya agar dapat melakukan aktivitas secara normal.'),
+('P02', 'Translokasi', 'Sindrom tipe translokasi menyumbang sekitar 3 persen hingga 4 persen anak-anak dengan down syndrome. Menurut National Down Syndrome Society pada tipe translokasi, ada bagian dari kromosom 21 yang melekat ke kromosom lain, biasanya kromosom 14.', 'Pengobatan Down syndrome bertujuan untuk mengatasi kondisi yang menyertainya dan membantu penderita dalam beraktivitas. Metode pengobatannya dapat berupa terapi atau pemberian obat-obatan.\r\n\r\nSindrom Down tidak dapat dicegah. Namun, konseling genetik dapat memberitahu Anda seberapa besar kemungkinan memiliki anak dengan kondisi ini.\r\n\r\nPemeriksaan genetik disarankan bagi orang yang memiliki keluarga dengan Down syndrome atau merencanakan kehamilan berikutnya setelah sebelumnya memiliki anak yang menderita kelainan ini.'),
+('P03', 'Mosaik', 'Pada down syndrome mosaik, beberapa sel memiliki tiga salinan kromosom 21, tetapi yang lain tetap berpasangan biasa.  Diketahui, down syndrome mosaic ini merupakan tipe yang paling langka dan menyumbang 1 sampai 2 persen kasus.', 'Pengobatan Down syndrome bertujuan untuk mengatasi kondisi yang menyertainya dan membantu penderita dalam beraktivitas. Metode pengobatannya dapat berupa terapi atau pemberian obat-obatan.\r\n\r\nSindrom Down tidak dapat dicegah. Namun, konseling genetik dapat memberitahu Anda seberapa besar kemungkinan memiliki anak dengan kondisi ini.\r\n\r\nPemeriksaan genetik disarankan bagi orang yang memiliki keluarga dengan Down syndrome atau merencanakan kehamilan berikutnya setelah sebelumnya memiliki anak yang menderita kelainan ini.'),
+('P01P02P03', 'Trisomi 21, Translokasi, Mosaik', 'Sindrom Down juga disebut sebagai Trisomi 21. Salinan ekstra ini mengubah cara tubuh dan otak bayi berkembang, yang dapat menyebabkan tantangan mental dan fisik bagi bayi.\r\n<br><br>\r\n\r\nSindrom tipe translokasi menyumbang sekitar 3 persen hingga 4 persen anak-anak dengan down syndrome. Menurut National Down Syndrome Society pada tipe translokasi, ada bagian dari kromosom 21 yang melekat ke kromosom lain, biasanya kromosom 14.\r\n<br><br>\r\n\r\nPada down syndrome mosaik, beberapa sel memiliki tiga salinan kromosom 21, tetapi yang lain tetap berpasangan biasa.  Diketahui, down syndrome mosaic ini merupakan tipe yang paling langka dan menyumbang 1 sampai 2 persen kasus.', 'Pengobatan Down syndrome bertujuan untuk mengatasi kondisi yang menyertainya dan membantu penderita dalam beraktivitas. Metode pengobatannya dapat berupa terapi atau pemberian obat-obatan.\r\n\r\nSindrom Down tidak dapat dicegah. Namun, konseling genetik dapat memberitahu Anda seberapa besar kemungkinan memiliki anak dengan kondisi ini.\r\n\r\nPemeriksaan genetik disarankan bagi orang yang memiliki keluarga dengan Down syndrome atau merencanakan kehamilan berikutnya setelah sebelumnya memiliki anak yang menderita kelainan ini.'),
+('000', 'Kemungkinan semua penyakit', 'makan teratur, jaga kesehatan, dan sering berolahraga', 'makan teratur, jaga kesehatan, dan sering berolahraga'),
+('P1P2', 'Trisomi 21, Translokasi', 'Trisomi 21 merupakan jenis Down syndrome yang paling sering terjadi. Pada jenis ini, setiap sel tubuh memiliki salinan ekstra kromosom 21.', 'Pengobatan Down syndrome bertujuan untuk mengatasi kondisi yang menyertainya dan membantu penderita dalam beraktivitas. Metode pengobatannya dapat berupa terapi atau pemberian obat-obatan. Adapun terapi yang bisa dilakukan adalah : terapi fisik, terapi bicara, terapi kerja, dan terapu okupasi'),
+('P1P3', 'Trisomi 21, Mosaik', 'Pada jenis ini, salinan ekstra dari kromosom 21 hanya menempel di beberapa sel sehingga ciri-ciri Down syndrome pada penderita jenis mosaik tidak terlalu terlihat jelas seperti pada trisomi 21.', 'Pengobatan Down syndrome bertujuan untuk mengatasi kondisi yang menyertainya dan membantu penderita dalam beraktivitas. Metode pengobatannya dapat berupa terapi atau pemberian obat-obatan. Adapun terapi yang bisa dilakukan adalah : terapi fisik, terapi bicara, terapi kerja, dan terapu okupasi'),
+('P2P3', 'Translokasi, Mosaik', 'Pada jenis ini, salinan ekstra dari kromosom 21 menempel di kromosom lain. sindrom Down jenis translokasi dapat diturunkan dari orang tua ke anak', 'Pengobatan Down syndrome bertujuan untuk mengatasi kondisi yang menyertainya dan membantu penderita dalam beraktivitas. Metode pengobatannya dapat berupa terapi atau pemberian obat-obatan. Adapun terapi yang bisa dilakukan adalah : terapi fisik, terapi bicara, terapi kerja, dan terapu okupasi');
 
 -- --------------------------------------------------------
 
@@ -230,17 +114,19 @@ INSERT INTO `pasien` (`id_pasien`, `nama_ayah`, `nama_ibu`, `nomor_hp`, `jenis_k
 CREATE TABLE `penyakit` (
   `kode_penyakit` varchar(50) NOT NULL,
   `nama_penyakit` varchar(100) NOT NULL,
-  `nilai` float NOT NULL
+  `nilai` float NOT NULL,
+  `deskripsi_penyakit` text NOT NULL,
+  `solusi_penyakit` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data untuk tabel `penyakit`
 --
 
-INSERT INTO `penyakit` (`kode_penyakit`, `nama_penyakit`, `nilai`) VALUES
-('P001', 'Trisomi 21', 0),
-('P002', 'Translokasi', 0),
-('P003', 'Mosaik', 0);
+INSERT INTO `penyakit` (`kode_penyakit`, `nama_penyakit`, `nilai`, `deskripsi_penyakit`, `solusi_penyakit`) VALUES
+('P01', 'Trisomi 21', 0, 'Sindrom Down juga disebut sebagai Trisomi 21. Salinan ekstra ini mengubah cara tubuh dan otak bayi berkembang, yang dapat menyebabkan tantangan mental dan fisik bagi bayi.', 'Dengan melakukan Fisioterapi. Dengan begitu, penderita Down Syndrome dapat melatih tubuhnya agar dapat melakukan aktivitas secara normal.'),
+('P02', 'Translokasi', 0, 'Sindrom tipe translokasi menyumbang sekitar 3 persen hingga 4 persen anak-anak dengan down syndrome. Menurut National Down Syndrome Society pada tipe translokasi, ada bagian dari kromosom 21 yang melekat ke kromosom lain, biasanya kromosom 14.', 'Pengobatan Down syndrome bertujuan untuk mengatasi kondisi yang menyertainya dan membantu penderita dalam beraktivitas. Metode pengobatannya dapat berupa terapi atau pemberian obat-obatan.\r\n\r\nSindrom Down tidak dapat dicegah. Namun, konseling genetik dapat memberitahu Anda seberapa besar kemungkinan memiliki anak dengan kondisi ini.\r\n\r\nPemeriksaan genetik disarankan bagi orang yang memiliki keluarga dengan Down syndrome atau merencanakan kehamilan berikutnya setelah sebelumnya memiliki anak yang menderita kelainan ini.'),
+('P03', 'Mosaik', 0, 'Pada down syndrome mosaik, beberapa sel memiliki tiga salinan kromosom 21, tetapi yang lain tetap berpasangan biasa.  Diketahui, down syndrome mosaic ini merupakan tipe yang paling langka dan menyumbang 1 sampai 2 persen kasus.', 'Pengobatan Down syndrome bertujuan untuk mengatasi kondisi yang menyertainya dan membantu penderita dalam beraktivitas. Metode pengobatannya dapat berupa terapi atau pemberian obat-obatan.Sindrom Down tidak dapat dicegah. Namun, konseling genetik dapat memberitahu Anda seberapa besar kemungkinan memiliki anak dengan kondisi ini.Pemeriksaan genetik disarankan bagi orang yang memiliki keluarga dengan Down syndrome atau merencanakan kehamilan berikutnya setelah sebelumnya memiliki anak yang menderita kelainan ini.');
 
 -- --------------------------------------------------------
 
@@ -262,7 +148,8 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `email`, `password`, `tipe`, `nama`, `foto_profil`) VALUES
-(1, 'admin@potads.com', 'admin', 1, 'admin', 'none.jpg');
+(1, 'admin@potads.com', 'admin', 1, 'admin', 'none.jpg'),
+(18, 'admin@mabar.com', 'admin', 1, 'team', 'none.jpg');
 
 --
 -- Indexes for dumped tables
@@ -294,13 +181,13 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT untuk tabel `pasien`
 --
 ALTER TABLE `pasien`
-  MODIFY `id_pasien` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=170;
+  MODIFY `id_pasien` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT untuk tabel `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

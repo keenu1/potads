@@ -35,6 +35,15 @@ $kode_Penyakit = 'aa';
   <!-- CSS Files -->
   <link id="pagestyle" href="../assets/css/material-kit.css?v=3.0.4" rel="stylesheet" />
 
+  <style type="text/css">
+    .tdElipsis {
+      max-width: 250px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  </style>
+
 </head>
 
 <body class="index-page bg-gray-200">
@@ -49,11 +58,11 @@ $kode_Penyakit = 'aa';
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Tambah Data Penyakit</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Tambah Data Pengetahuan</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <form role="form" id="contact-form" method="post" action="phpadminpenyakitinsert.php" autocomplete="off">
+          <form role="form" id="contact-form" method="post" action="phppengetahuaninsert.php" autocomplete="off">
             <div class="card-body">
               <div class="input-group input-group-dynamic mb-4">
                 <label class="form-label">Kode Penyakit</label>
@@ -63,10 +72,14 @@ $kode_Penyakit = 'aa';
                 <label class="form-label">Nama Penyakit</label>
                 <input type="text" class="form-control" placeholder="" aria-label="Penyakit" name="nama_penyakit">
               </div>
-              <!-- <div class="input-group input-group-dynamic mb-4">
-                <label class="form-label">Nilai</label>
-                <input type="number" step="0.01" class=" form-control" placeholder="" aria-label="nilai" name="nilai">
-              </div> -->
+              <div class="input-group input-group-static mb-4">
+                <label>Deskripsi</label>
+                <textarea type="text" class="form-control" placeholder="" aria-label="deskripsi_penyakit" name="deskripsi_penyakit" rows="4" cols="50"></textarea>
+              </div>
+              <div class="input-group input-group-static mb-4">
+                <label>Solusi</label>
+                <textarea type="text" class="form-control" placeholder="" aria-label="solusi_penyakit" name="solusi_penyakit" rows="4" cols="50"></textarea>
+              </div>
             </div>
 
         </div>
@@ -113,8 +126,8 @@ $kode_Penyakit = 'aa';
         <div class="row">
           <div class="row justify-content-center text-center my-sm-1">
             <div class="col-lg-12">
-              <h2 class="text-dark mb-0">Data Penyakit</h2>
-              <p class="lead">Silahkan Input dan Edit bobot nilai penyakit. </p>
+              <h2 class="text-dark mb-0">Data Basis Pengetahuan</h2>
+              <p class="lead">Silahkan Input dan Edit data basis pengetahuan. </p>
               <div class="table-responsive">
                 <table class="table table-hover">
                   <thead>
@@ -122,7 +135,8 @@ $kode_Penyakit = 'aa';
                       <th scope="col">No</th>
                       <th scope="col">Kode Penyakit</th>
                       <th scope="col">Nama Penyakit</th>
-                      <!-- <th scope="col">Nilai</th> -->
+                      <th scope="col">Deskripsi</th>
+                      <th scope="col">Solusi</th>
                       <th scope="col">Aksi</th>
                     </tr>
                   </thead>
@@ -130,16 +144,17 @@ $kode_Penyakit = 'aa';
                     <?php
                     include 'koneksi.php';
                     $no = 1;
-                    $query = mysqli_query($koneksi, "SELECT * FROM penyakit") or die(mysqli_error($koneksi));
+                    $query = mysqli_query($koneksi, "SELECT * FROM pengetahuan") or die(mysqli_error($koneksi));
                     foreach ($query as $data) {
                     ?>
                       <tr>
                         <th class="text-center" scope="row"><?php echo $no ?></th>
                         <th class="text-center" scope="row"><?php echo $data['kode_penyakit'] ?></th>
                         <td class="text-start"><?php echo $data['nama_penyakit'] ?></td>
-                        <!-- <td class="text-center"><?php echo $data['nilai'] ?></td> -->
+                        <td class="text-center tdElipsis"><?php echo $data['deskripsi_penyakit'] ?></td>
+                        <td class="text-center tdElipsis"><?php echo $data['solusi_penyakit'] ?></td>
                         <td class="text-center">
-                          <a href="phpadminpenyakithapus.php?kode_penyakit=<?php echo $data['kode_penyakit'] ?>" onclick="return confirm('Anda yakin akan menghapus data ini?')">
+                          <a href="phppengetahuandeleted.php?kode_penyakit=<?php echo $data['kode_penyakit'] ?>" onclick="return confirm('Anda yakin akan menghapus data ini?')">
                             <button type="button" class="btn btn-danger btn-sm w-auto me-1 mb-0 pt-2">
                               <i class='bx bx-trash' style="font-size : 1.25rem;"></i>
                             </button>
@@ -167,6 +182,12 @@ $kode_Penyakit = 'aa';
 
 
     </section>
+
+
+
+
+
+
   </div>
   <?php
   foreach ($query as $data) {
@@ -176,24 +197,32 @@ $kode_Penyakit = 'aa';
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Perbarui Data Penyakit</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Perbarui Data Pengetahuan</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <form role="form" id="contact-form" method="post" action="phpadminpenyakitupdate.php" autocomplete="off">
+            <form role="form" id="contact-form" method="post" action="phppengetahuanupdate.php" autocomplete="off">
               <div class="card-body">
                 <div class="input-group input-group-static mb-4">
                   <label>Kode Penyakit</label>
                   <input class="form-control" aria-label="kode_penyakit_baru" type="text" name="kode_penyakit_baru" value="<?php echo $data['kode_penyakit'] ?>">
                 </div>
                 <input class="form-control" hidden aria-label="kode_penyakit_lama" type="text" name="kode_penyakit_lama" value="<?php echo $data['kode_penyakit'] ?>">
+                <!-- <input type="number"hidden step="0.01" class=" form-control" placeholder="" aria-label="nilai" name="nilai" value="<?php //echo $data['nilai'] 
+                                                                                                                                        ?>"> -->
+
                 <div class="input-group input-group-static mb-4">
                   <label>Penyakit</label>
                   <input type="text" class="form-control" placeholder="" aria-label="penyakit" name="penyakit" value="<?php echo $data['nama_penyakit'] ?>">
                 </div>
-                <input class="number" hidden aria-label="nilai" name="nilai" value="<?php echo $data['nilai'] ?>">
-                <input class="form-control" hidden aria-label="deskripsi_penyakit" type="text" name="deskripsi_penyakit" value="<?php echo $data['deskripsi_penyakit'] ?>">
-                <input class="form-control" hidden aria-label="solusi_penyakit" type="text" name="solusi_penyakit" value="<?php echo $data['solusi_penyakit'] ?>">
+                <div class="input-group input-group-static mb-4">
+                  <label>Deskripsi</label>
+                  <textarea type="text" class="form-control" placeholder="" aria-label="deskripsi_penyakit" name="deskripsi_penyakit" rows="4" cols="50"><?php echo $data['deskripsi_penyakit'] ?></textarea>
+                </div>
+                <div class="input-group input-group-static mb-4">
+                  <label>Solusi</label>
+                  <textarea type="text" class="form-control" placeholder="" aria-label="solusi_penyakit" name="solusi_penyakit" rows="4" cols="50"><?php echo $data['solusi_penyakit'] ?></textarea>
+                </div>
               </div>
 
           </div>
@@ -352,7 +381,7 @@ $kode_Penyakit = 'aa';
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="../index.php">
-                  Potads
+                  Sistem Pakar
                 </a>
               </li>
             </ul>
@@ -392,8 +421,9 @@ $kode_Penyakit = 'aa';
 
 
 
-  <!--   Core JS Files   -->
-  <script src="../assets/js/core/popper.min.js" type="text/javascript"></script>
+  <!--Core JS Files-->
+  <script src="../assets/js/core/popper.min.js" type="text/javascript">
+  </script>
   <script src="../assets/js/core/bootstrap.min.js" type="text/javascript"></script>
   <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
 

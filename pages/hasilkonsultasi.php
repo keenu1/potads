@@ -13,7 +13,7 @@ include 'phpcekhasilkonsultasi.php';
   <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/logo.jpg">
   <link rel="icon" type="image/jpg" href="../assets/img/logo.jpg">
 
-  <title>Potads</title>
+  <title>Sistem Pakar</title>
 
   <!--     Fonts and icons     -->
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
@@ -61,42 +61,71 @@ include 'phpcekhasilkonsultasi.php';
       </div>
     </section>
 
-    <section class="my-0 py-0">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-4 ms-auto me-auto p-lg-4 mt-lg-0 mt-4">
-            <div class="rotating-card-container">
-              <div class="card card-rotate card-background card-background-mask-primary shadow-primary mt-md-0 mt-5">
-                <div class="front front-background" style="background-image: url(https://images.unsplash.com/photo-1569683795645-b62e50fbf103?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80); background-size: cover;">
-                  <div class="card-body py-7 text-center">
-                    <h1 class="text-white my-3"><?php echo $_SESSION['hasil_bobot_akhir'] ?></h1>
-                    <h3 class="text-white"> Score</h3>
-                    <p class="text-white opacity-8">Dihitung menggunakan rumus yang shahih dan sanadnya nyambing.</p>
+    <?php include 'koneksi.php';
+    $no = 1;
+    $query = mysqli_query($koneksi, "SELECT * FROM pengetahuan") or die(mysqli_error($koneksi));
+    $checkNormal = true;
+
+    foreach ($_SESSION['nama_penyakit'] as $validate) {
+      $checkNormal = false;
+
+    ?>
+      <section class="my-0 py-0">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-4 ms-auto me-auto p-lg-4 mt-lg-0 mt-4">
+              <div class="rotating-card-container">
+                <div class="card card-rotate card-background card-background-mask-primary shadow-primary mt-md-0 mt-5">
+                  <div class="front front-background" style="background-image: url(https://images.unsplash.com/photo-1569683795645-b62e50fbf103?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80); background-size: cover;">
+                    <div class="card-body py-7 text-center">
+                      <h1 class="text-white my-3"><?php echo $_SESSION['persentase_penyakit'][$no - 1]; ?></h1>
+                      <h3 class="text-white"> Score</h3>
+                      <p class="text-white opacity-8">Dihitung menggunakan rumus dempster shafer.</p>
+                    </div>
                   </div>
-                </div>
-                <div class="back back-background" style="background-image: url(https://images.unsplash.com/photo-1498889444388-e67ea62c464b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1365&q=80); background-size: cover;">
-                  <div class="card-body pt-7 text-center">
-                    <h3 class="text-white">Konsultasi Lagi ?</h3>
-                    <p class="text-white opacity-8"> Apabila kurang yakin dengan hasil silahkan klik tombol dibawah untuk konsultasi kembali.</p>
-                    <a href="./konsultasi.php" class="btn btn-white btn-sm w-50 mx-auto mt-3">Konsultasi</a>
+                  <div class="back back-background" style="background-image: url(https://images.unsplash.com/photo-1498889444388-e67ea62c464b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1365&q=80); background-size: cover;">
+                    <div class="card-body pt-7 text-center">
+                      <h3 class="text-white">Konsultasi Lagi ?</h3>
+                      <p class="text-white opacity-8"> Apabila kurang yakin dengan hasil silahkan klik tombol dibawah untuk konsultasi kembali.</p>
+                      <a href="./konsultasi.php" class="btn btn-white btn-sm w-50 mx-auto mt-3">Konsultasi</a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-6 ms-0">
-            <div class="row justify-content-start mt-0">
-              <div class="col-md-12 mt-3">
-                <h5 class="font-weight-bolder mt-3"><?php echo $_SESSION['nama_penyakit_terindikasi'] ?></h5>
-                <p class="pe-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor alias earum neque tenetur ipsa ipsam nisi? Consequatur, ratione quae. Obcaecati rerum hic eum voluptatum error repellendus ducimus quia atque. Et.</p>
+            <div class="col-lg-6 ms-0">
+              <div class="row justify-content-start mt-0">
+                <div class="col-md-12 mt-3">
+                  <h5 class="font-weight-bolder mt-3" style="text-transform: uppercase;"><?php echo $validate ?></h5>
+                  <?php foreach ($query as $data) {
+                    if ($data["nama_penyakit"] == $validate) {
+                  ?>
+                      <h5>Deskripsi</h5>
+                      <p class="pe-5"><?php echo $data['deskripsi_penyakit'] ?></p>
+                      <h5>Solusi</h5>
+                      <p class="pe-5"><?php echo $data['solusi_penyakit'] ?></p>
+
+                  <?php }
+                  } ?>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
+    <?php $no++;
+    }
 
+    if ($checkNormal) {
+      echo "<div class='text-center'>";
+      echo "<h5 class='font-weight-bolder mt-3' style='text-transform: uppercase;'> Ananda ";
+      echo $_SESSION['nama_pasien'];
+      echo "</h5>";
+      echo "<p>Sehat Jasmani dan Rohani</p>";
+      echo "</div>";
+    }
+    ?>
     <!-- <section class="my-5">
   <div class="container">
     <div class="row">
@@ -210,7 +239,6 @@ Bahkan, gejala atau ciri-ciri Down syndrome atau sindrom Down bisa berbeda-beda 
             </div>
             <div class="col-lg-8 col-md-6 col-12 my-auto">
               <div class="card-body ps-lg-0">
-                <h5 class="mb-0">M Rizki Nugroho</h5>
                 <h6 class="text-gradient text-primary">Software Engineer</h6>
                 <p class="mb-0">Seorang manusia nolep yang doyan rebahan dan ngoding.</p>
               </div>
@@ -240,10 +268,10 @@ Bahkan, gejala atau ciri-ciri Down syndrome atau sindrom Down bisa berbeda-beda 
             <a href="https://www.creative-tim.com/product/material-kit">
               <img src="../assets/img/logo.png" class="mb-3 footer-logo" alt="main_logo">
             </a>
-            <h6 class="font-weight-bolder mb-4">Potads</h6>
+            <h6 class="font-weight-bolder mb-4">Sistem Pakar</h6>
           </div>
           <div>
-            <ul class="d-flex flex-row ms-n3 nav">
+            <!-- <ul class="d-flex flex-row ms-n3 nav">
               <li class="nav-item">
                 <a class="nav-link pe-1" href="https://www.facebook.com/CreativeTim" target="_blank">
                   <i class="fab fa-facebook text-lg opacity-8"></i>
@@ -274,7 +302,7 @@ Bahkan, gejala atau ciri-ciri Down syndrome atau sindrom Down bisa berbeda-beda 
                   <i class="fab fa-youtube text-lg opacity-8"></i>
                 </a>
               </li>
-            </ul>
+            </ul> -->
           </div>
         </div>
 
@@ -374,7 +402,7 @@ Bahkan, gejala atau ciri-ciri Down syndrome atau sindrom Down bisa berbeda-beda 
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="../index.php">
-                  Potads
+                  Sistem Pakar
                 </a>
               </li>
             </ul>
@@ -382,13 +410,12 @@ Bahkan, gejala atau ciri-ciri Down syndrome atau sindrom Down bisa berbeda-beda 
         </div>
 
         <div class="col-12">
-          <div class="text-center">
+          <!-- <div class="text-center">
             <p class="text-dark my-4 text-sm font-weight-normal">
               All rights reserved. Copyright © <script>
                 document.write(new Date().getFullYear())
-              </script><a href="http://keenu.epizy.com/" target="_blank"> Rizki</a>.
             </p>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>

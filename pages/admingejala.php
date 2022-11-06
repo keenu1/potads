@@ -14,7 +14,7 @@ $kode_gejala = 'aa';
   <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/logo.jpg">
   <link rel="icon" type="image/jpg" href="../assets/img/logo.jpg">
 
-  <title>Potads</title>
+  <title>Sistem Pakar</title>
 
   <!--     Fonts and icons     -->
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
@@ -252,10 +252,10 @@ $kode_gejala = 'aa';
             <a href="https://www.creative-tim.com/product/material-kit">
               <img src="../assets/img/logo.png" class="mb-3 footer-logo" alt="main_logo">
             </a>
-            <h6 class="font-weight-bolder mb-4">Potads</h6>
+            <h6 class="font-weight-bolder mb-4">Sistem Pakar</h6>
           </div>
           <div>
-            <ul class="d-flex flex-row ms-n3 nav">
+            <!-- <ul class="d-flex flex-row ms-n3 nav">
               <li class="nav-item">
                 <a class="nav-link pe-1" href="https://www.facebook.com/CreativeTim" target="_blank">
                   <i class="fab fa-facebook text-lg opacity-8"></i>
@@ -286,7 +286,7 @@ $kode_gejala = 'aa';
                   <i class="fab fa-youtube text-lg opacity-8"></i>
                 </a>
               </li>
-            </ul>
+            </ul> -->
           </div>
         </div>
 
@@ -386,7 +386,7 @@ $kode_gejala = 'aa';
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="../index.php">
-                  Potads
+                  Sistem Pakar
                 </a>
               </li>
             </ul>
@@ -395,15 +395,16 @@ $kode_gejala = 'aa';
 
         <div class="col-12">
           <div class="text-center">
-            <p class="text-dark my-4 text-sm font-weight-normal">
+            <div class="text-center">
+              <!-- <p class="text-dark my-4 text-sm font-weight-normal">
               All rights reserved. Copyright © <script>
                 document.write(new Date().getFullYear())
               </script><a href="http://keenu.epizy.com/" target="_blank"> Rizki</a>.
-            </p>
+            </p> -->
+            </div>
           </div>
         </div>
       </div>
-    </div>
   </footer>
 
 
@@ -426,8 +427,9 @@ $kode_gejala = 'aa';
 
 
 
-  <!--   Core JS Files   -->
-  <script src="../assets/js/core/popper.min.js" type="text/javascript"></script>
+  <!--Core JS Files-->
+  <script src="../assets/js/core/popper.min.js" type="text/javascript">
+  </script>
   <script src="../assets/js/core/bootstrap.min.js" type="text/javascript"></script>
   <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
 

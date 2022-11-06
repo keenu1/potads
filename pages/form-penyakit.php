@@ -37,7 +37,7 @@
 <div class="container position-sticky z-index-sticky top-0"><div class="row"><div class="col-12">
 <nav class="navbar navbar-expand-lg  blur border-radius-xl top-0 z-index-fixed shadow position-absolute my-3 py-2 start-0 end-0 mx-4">
   <div class="container-fluid px-0">
-    <a class="navbar-brand font-weight-bolder ms-sm-3" href="#home" rel="tooltip" title="Design by Rizki" data-placement="bottom">
+    <a class="navbar-brand font-weight-bolder ms-sm-3" href="#home" rel="tooltip" data-placement="bottom">
       Potads
     </a>
     <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
@@ -343,13 +343,11 @@ Bahkan, gejala atau ciri-ciri Down syndrome atau sindrom Down bisa berbeda-beda 
             <div class="col-lg-4 col-md-6 col-12 mt-n5">
               <a href="javascript:;">
                 <div class="p-3 pe-md-0">
-                  <img class="w-100 border-radius-md shadow-lg" src="../assets/img/Rizki.jpg" alt="image">
-                </div>
+                    </div>
               </a>
             </div>
             <div class="col-lg-8 col-md-6 col-12 my-auto">
               <div class="card-body ps-lg-0">
-                <h5 class="mb-0">M Rizki Nugroho</h5>
                 <h6 class="text-gradient text-primary">Software Engineer</h6>
                 <p class="mb-0">Seorang manusia nolep yang doyan rebahan dan ngoding.</p>
               </div>
@@ -523,7 +521,7 @@ Bahkan, gejala atau ciri-ciri Down syndrome atau sindrom Down bisa berbeda-beda 
       <div class="col-12">
         <div class="text-center">
           <p class="text-dark my-4 text-sm font-weight-normal">
-            All rights reserved. Copyright © <script>document.write(new Date().getFullYear())</script><a href="http://keenu.epizy.com/" target="_blank"> Rizki</a>.
+            All rights reserved. Copyright © <script>document.write(new Date().getFullYear())</script>
           </p>
         </div>
       </div>

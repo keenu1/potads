@@ -58,163 +58,88 @@
         <div class="row">
           <div class="row justify-content-center text-center my-sm-1">
             <div class="col-lg-12">
-              <h2 class="text-dark mb-0">Demphster Shefer </h2>
-              <p class="lead">Sub title isi dibagian sini</p>
-              <div class="pe-md-5 mb-5 justify-text mb-0">
-                ganti textnya disini jan yang lain
+              <h2 class="text-dark mb-0">Tentang Website </h2>
+              <p class="lead">kata kunci : Sistem pakar, Dempster Shafer, Down Syndrome</p>
+              <div class="pe-md-5 mb-10 justify-text mb-0">
+                Sistem Pakar
                 <br>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat error natus similique optio doloremque sint nostrum alias quis ipsa ad quasi hic, itaque animi quas maxime sunt debitis rem. Aspernatur?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, eos cumque provident, minima, eius delectus consectetur est saepe dicta at quos asperiores impedit sunt molestias corrupti. Voluptate nobis nihil iusto, asperiores laborum soluta odio perspiciatis veritatis, velit, voluptatem consectetur! Aspernatur necessitatibus, veritatis laboriosam dolores aut officiis, quod quam natus, cumque nihil delectus odio nam. Deleniti ex cupiditate eligendi ullam? Odio, quos! Quos earum voluptatibus voluptas laudantium dolorum sunt ex quibusdam optio consectetur tempora nam dolores, magnam facere dignissimos dolore tenetur magni laborum accusantium quis doloribus officiis! In aliquam non voluptates totam provident nam facilis. Sed nemo eveniet autem quas iste?
+                Sistem pakar adalah suatu sistem komputer yang bisa menyamai atau meniru kemampuan seorang pakar. Pakar yang dimaksud disini ialah orang yang mempunyai keahlian khusus yang dapat menyelesaikan masalah yang tidak dapat diselesaikan orang awam. Contohnya dokter, mekanik, psikolog dan lain-lain.
+                Suatu sistem pakar adalah suatu sistem komputer yang menyamai (emulates) kemampuan pengambilan keputusan dari seorang pakar-pakar. Basis pengetahuan yang diperoleh, diambil dari pengalaman seorang pakar maupun teori-teori yang ada pada bidang yang spesifik saja, oleh karena itu sistem pakar memiliki keterbatasan.
                 <br><br>
-
+                <div class="pe-md-5 mb-10 justify-text mb-0">
+                Dempster Shafer
+                <br>
+                Teori fungsi keyakinan, juga disebut sebagai teori bukti atau teori Dempster-Shafer, adalah kerangka umum untuk penalaran dengan ketidakpastian, dengan koneksi yang dipahami ke kerangka kerja lain seperti teori probabilitas, kemungkinan, dan probabilitas tidak tepat. Pertama kali diperkenalkan oleh Arthur P.
+                metode ini dipilih karena sejatinya Down Syndrome merupakan kelainan genetik kromosom sehingga dalam validasinya memerlukan pengecekan langsung ke rumah sakit. Namun dengan metode ini, dapat dilakukan pendeteksian awal berdasarkan gejala-gejala yang dapat diamati. 
+                metode ini erat kaitannya dengan nilai bobot oleh pakar sehingga memiliki rumus sebagai berikut:<br><br>
                 <div class=" col-12 my-auto d-flex justify-content-center">
                   <a href="#">
                     <img class="w-100 border-radius-lg shadow-lg" src="./assets/img/rumus.jpg" alt="Product Image">
                   </a>
                 </div>
+                <div class="pe-md-5 mb-10 justify-text mb-0">
+                Down Syndrome
+                <br>Down sindrom adalah penyakit yang merupakan kumpulan gejala klinik spesifik yang pertama kali 
+                ditemukan Bapak Down. Down sindrom merupakan penyebab utama keterbelakangan mental (disabilitas 
+                intelektual) yang umumnya disebabkan oleh kromosom ekstra yang tidak diwariskan. Penyakit ini 
+                disebabkan karena kelainan kromosom yang dihubungkan dengan gangguan pembelahan sel telur pada 
+                ibu yang hamil pada usia akhir reproduksi.
                 <br><br>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, eos cumque provident, minima, eius delectus consectetur est saepe dicta at quos asperiores impedit sunt molestias corrupti. Voluptate nobis nihil iusto, asperiores laborum soluta odio perspiciatis veritatis, velit, voluptatem consectetur! Aspernatur necessitatibus, veritatis laboriosam dolores aut officiis, quod quam natus, cumque nihil delectus odio nam. Deleniti ex cupiditate eligendi ullam? Odio, quos! Quos earum voluptatibus voluptas laudantium dolorum sunt ex quibusdam optio consectetur tempora nam dolores, magnam facere dignissimos dolore tenetur magni laborum accusantium quis doloribus officiis! In aliquam non voluptates totam provident nam facilis. Sed nemo eveniet autem quas iste?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, eos cumque provident, minima, eius delectus consectetur est saepe dicta at quos asperiores impedit sunt molestias corrupti. Voluptate nobis nihil iusto, asperiores laborum soluta odio perspiciatis veritatis, velit, voluptatem consectetur! Aspernatur necessitatibus, veritatis laboriosam dolores aut officiis, quod quam natus, cumque nihil delectus odio nam. Deleniti ex cupiditate eligendi ullam? Odio, quos! Quos earum voluptatibus voluptas laudantium dolorum sunt ex quibusdam optio consectetur tempora nam dolores, magnam facere dignissimos dolore tenetur magni laborum accusantium quis doloribus officiis! In aliquam non voluptates totam provident nam facilis. Sed nemo eveniet autem quas iste?
+                <div class="pe-md-5 mb-10 justify-text mb-0">
+                <br>Ciri-ciri Down Sindrom
+Anak-anak dengan sindrom Down cenderung cerdas, ceria dan berkemauan keras. Beberapa ada yang 
+menyukai musik, yang lain tidak tertarik sama sekali. Beberapa orang sangat energik, yang lain kurang 
+aktif. Semua orang dengan sindrom Down memiliki berbagai tingkat kecacatan intelektual, tetapi 
+umumnya memiliki IQ 50 s/d 90.
+Karakteristik fisik orang dengan sindrom Down sangat bervariasi dari kasus ke kasus. Banyak anak dengan 
+sindrom ini hanya memiliki 6 atau 7 ciri, tetapi ada satu ciri yang selalu terlihat pada orang dengan sindrom 
+Down dan itu adalah adanya cacat intelektual.
+                <br><br>
+                <br>Ciri fisik : </br>
+<br>1. Kepala</br>
+Bagian belakang kepala cenderung rata ayau bisa disebit sebagai flat occiput dan brakisefali
+<br>2. Mata</br>
+Mata Penderita down sindrom cenderung sipit miring keatas. Terdapat suatu lipatan kecil yang 
+berjalan vertikal diantara sudut dalam mata dan jembatan hidung, ciri ini biasa disebut epikantus. 
+Kedua mata dapat memiliki bercak putih atau kuning muda di sekitar tepian iris. Bercak-bercak ini 
+disebut bintik Brushfield, mengikuti nama seorang dokter Inggris Dr. T. Brushfield (1858-1937).
+<br>3. Rambut</br>
+penderita down sindrom biasanya memiliki rambut yang lemas dan lurus
+<br>4. Leher</br>
+Bayi-bayi yang menderita down sindrom memiliki kulit berlebih pada bagian belakang leher. 
+Sedangkan untuk anak-anak yang lebih besar dan dewasa cenderung memiliki leher yang lebar 
+dan pendek
+<br>5. Mulut</br>
+Memiliki rongga mulut yang lebih kecil dari rata-rata, lidahnya sedikit lebih besar. 
+<br>6. Tangan</br>
+Memiliki kedua tangan yang lebar dengan jari yang pendek. Terkadang jari kelingking hanya 
+memiliki satu sendi (2 ruas) , sedikit lebih melengkung ke arah jari-jari lain atau biasa di sebut 
+klinodaktili. Telapak tangan hanya memiliki satu alur yang horizontal. Anak kecil penderita down 
+sindrom tidak dapat menggenggam banyak benda sebagaimana seperti anak normal pada 
+umumnya
+<br>7. Kaki</br>
+Kedua kaki lebih pendek dan gemuk dari biasanya, dengan jarak yang lebar antara jari kaki 
+pertama dan kedua (celah sandal)
+<br>8. Otot dan pesendian</br>
+Bayi dengan sindrom Down sering memiliki anggota badan dan leher terkulai. Kelemahan otot ini 
+disebut hipotonia, yang berarti tonus rendah. Ketegangan adalah resistensi yang diberikan otot 
+terhadap tekanan ketika dalam keadaan rileks. Kekuatan otot biasanya normal. Bayi yang baru 
+lahir disebut bayi lemas karena cenderung menghasilkan tonus yang lebih rendah. tonus ini selalu 
+terendah di masa kanak-kanak dan meningkat seiring pertumbuhan anak, jadi tonus rendah tidak 
+menjadi masalah baik di masa remaja atau dewasa. Penggantung sendi juga lebih lentur sehingga 
+persendian sering mudah melipat, dapat dilipat berlawanan arah seperti penari balet.Ukuran 
+Tubuh
+<br>9. Ukuran Tubuh</br>
+Anak-anak penderita down sindrom mempunya berat badan lebih kecil daripada berat rata-rata. 
+Sewaktu lahir memiliki panjang tubuh yang lebih kecil. Semasa kanak-kanak, penderita down 
+sindrom tumbuh dengan teratur namun lambat, saat dewasa umumnya lebih pendek dari anggota 
+keluarga lainnya. Tinggi mereka sekitar 145-168 cm pada laki-laki dan 132-155 pada wanita
                 </p>
               </div>
             </div>
           </div>
         </div>
     </section>
-
-
-
-
-    <!-- <section class="my-5">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-7 col-12 my-auto">
-        <h3 class="text-gradient text-primary mb-0"> Apa Saja Gejala Down Syndrome </h3>
-        <h3>pada Anak?</h3>
-        <p class="pe-md-5 mb-4 justify-text">
-          Down syndrome atau sindrom Down adalah kondisi kelainan genetik yang disebabkan karena bayi memiliki tambahan salinan kromom ke-21. Kondisi cacat lahir yang satu ini mengakibatkan bayi mengalami keterlambatan pada perkembangan fisik bayi, mental, serta intelektualnya.
-<br><br>
-Meski kerap terlihat serupa, sebenarnya setiap bayi maupun anak-anak dengan Down syndrome memiliki kondisi fisik dan mental yang tidak selalu sama.
-
-Bahkan, gejala atau ciri-ciri Down syndrome atau sindrom Down bisa berbeda-beda pada setiap bayi dan anak-anak.
-
-        </p>
-        <div class="github-buttons">
-          <a href="https://www.creative-tim.com/product/material-kit-pro?ref=index-mk2" target="_blank" class="btn bg-gradient-primary mb-5 mb-sm-0">Baca Lebih Lanjut</a>
-          <div class="github-button">
-            <span></span>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-5 col-12 my-auto">
-        <a href="https://keenu.epizy.com">
-          <img class="w-100 border-radius-lg shadow-lg" src="./assets/img/Bayi-Syndrome.jpg" alt="Product Image">
-        </a>
-      </div>
-    </div>
-  </div>
-</section> -->
-
-    <!-- <section class="my-5 position-relative bg-gradient-dark mx-n3" id="tentangKita">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-8 text-start mb-5 mt-5">
-        <h3 class="text-white z-index-1 position-relative">Tim Deadliner</h3>
-        <p class="text-white opacity-8 mb-0">Rebahan jalan ninjaku SKS metodeku.</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-6 col-12">
-        <div class="card card-profile mt-4">
-          <div class="row">
-            <div class="col-lg-4 col-md-6 col-12 mt-n5">
-              <a href="javascript:;">
-                <div class="p-3 pe-md-0">
-                  <img class="w-100 border-radius-md shadow-lg" src="./assets/img/team-5.jpg" alt="image">
-                </div>
-              </a>
-            </div>
-            <div class="col-lg-8 col-md-6 col-12 my-auto">
-              <div class="card-body ps-lg-0">
-                <h5 class="mb-0">Emma Junaedi</h5>
-                <h6 class="text-gradient text-primary">Dokter Internis</h6>
-                <p class="mb-0">Seorang Dokter yang sangat mencintai Pekerjaannya dan Pasangan Hidupnya.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-6 col-12">
-        <div class="card card-profile mt-lg-4 mt-5">
-          <div class="row">
-            <div class="col-lg-4 col-md-6 col-12 mt-n5">
-              <a href="javascript:;">
-                <div class="p-3 pe-md-0">
-                  <img class="w-100 border-radius-md shadow-lg" src="./assets/img/bruce-mars.jpg" alt="image">
-                </div>
-              </a>
-            </div>
-            <div class="col-lg-8 col-md-6 col-12 my-auto">
-              <div class="card-body ps-lg-0">
-                <h5 class="mb-0">Rianti Surya</h5>
-                <h6 class="text-gradient text-primary">Pacar Yusuf</h6>
-                <p class="mb-0">Seorang mahasiswa yang melayani majikan majikannya dan bucin dengan bambang.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row mt-4 mb-5">
-      <div class="col-lg-6 col-12">
-        <div class="card card-profile mt-4 z-index-2">
-          <div class="row">
-            <div class="col-lg-4 col-md-6 col-12 mt-n5">
-              <a href="javascript:;">
-                <div class="p-3 pe-md-0">
-                  <img class="w-100 border-radius-md shadow-lg" src="./assets/img/ivana-squares.jpg" alt="image">
-                </div>
-              </a>
-            </div>
-            <div class="col-lg-8 col-md-6 col-12 my-auto">
-              <div class="card-body ps-lg-0">
-                <h5 class="mb-0">Yusuf</h5>
-                <h6 class="text-gradient text-primary">Pacar Yanti</h6>
-                <p class="mb-0">Dimana Bumi dipijak disitu saya tidur. bucin yanti</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-6 col-12">
-        <div class="card card-profile mt-lg-4 mt-5 z-index-2">
-          <div class="row">
-            <div class="col-lg-4 col-md-6 col-12 mt-n5">
-              <a href="javascript:;">
-                <div class="p-3 pe-md-0">
-                  <img class="w-100 border-radius-md shadow-lg" src="./assets/img/Rizki.jpg" alt="image">
-                </div>
-              </a>
-            </div>
-            <div class="col-lg-8 col-md-6 col-12 my-auto">
-              <div class="card-body ps-lg-0">
-                <h5 class="mb-0">M Rizki Nugroho</h5>
-                <h6 class="text-gradient text-primary">Software Engineer</h6>
-                <p class="mb-0">Seorang manusia nolep yang doyan rebahan dan ngoding.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-
-
-    <!-- -------   START PRE-FOOTER 2 - simple social line w/ title & 3 buttons    -------- -->
-
-    <!-- -------   END PRE-FOOTER 2 - simple social line w/ title & 3 buttons    -------- -->
-
   </div>
 
 
@@ -374,7 +299,7 @@ Bahkan, gejala atau ciri-ciri Down syndrome atau sindrom Down bisa berbeda-beda 
             <p class="text-dark my-4 text-sm font-weight-normal">
               All rights reserved. Copyright © <script>
                 document.write(new Date().getFullYear())
-              </script><a href="http://keenu.epizy.com/" target="_blank"> Rizki</a>.
+              </script><a href="http://keenu.epizy.com/" target="_blank"> Sistem Pakar</a>.
             </p>
           </div>
         </div>

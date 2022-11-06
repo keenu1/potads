@@ -14,7 +14,7 @@ $kode_gejala = 'aa';
     <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/logo.jpg">
     <link rel="icon" type="image/jpg" href="../assets/img/logo.jpg">
 
-    <title>Potads</title>
+    <title>Sistem Pakar</title>
 
     <!--     Fonts and icons     -->
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
@@ -114,7 +114,7 @@ $kode_gejala = 'aa';
                     <div class="row justify-content-center text-center my-sm-1">
                         <div class="col-lg-12">
                             <h2 class="text-dark mb-0">Data Pasien</h2>
-                            <p class="lead">Sub judul disini gantinya </p>
+                            <p class="lead">Pasien yang telah berkonsultasi </p>
                             <div class="table-responsive">
                                 <table class="table table-hover">
                                     <thead>
@@ -129,6 +129,7 @@ $kode_gejala = 'aa';
                                             <th scope="col">Nama </th>
                                             <th scope="col">Tanggal Lahir </th>
                                             <th scope="col">Umur</th>
+                                            <th scope="col">Hasil Konsultasi</th>
                                             <th scope="col">Aksi</th>
                                         </tr>
                                     </thead>
@@ -150,6 +151,7 @@ $kode_gejala = 'aa';
                                                 <td class="text-center"><?php echo $data['nama_pasien'] ?></td>
                                                 <td class="text-center"><?php echo $data['tanggal_lahir'] ?></td>
                                                 <td class="text-center"><?php echo $data['umur'] ?></td>
+                                                <td class="text-center"><?php echo $data['hasil_konsultasi'] ?></td>
                                                 <td class="text-center">
                                                     <a href="phpadminpasienhapus.php?id_pasien=<?php echo $data['id_pasien'] ?>" onclick="return confirm('Anda yakin akan menghapus data ini?')">
                                                         <button type="button" class="btn btn-danger btn-sm w-auto me-1 mb-0 pt-2">
@@ -185,138 +187,6 @@ $kode_gejala = 'aa';
 
 
         </section>
-
-
-        <!-- <section class="my-5">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-7 col-12 my-auto">
-        <h3 class="text-gradient text-primary mb-0"> Apa Saja Gejala Down Syndrome </h3>
-        <h3>pada Anak?</h3>
-        <p class="pe-md-5 mb-4 justify-text">
-          Down syndrome atau sindrom Down adalah kondisi kelainan genetik yang disebabkan karena bayi memiliki tambahan salinan kromom ke-21. Kondisi cacat lahir yang satu ini mengakibatkan bayi mengalami keterlambatan pada perkembangan fisik bayi, mental, serta intelektualnya.
-<br><br>
-Meski kerap terlihat serupa, sebenarnya setiap bayi maupun anak-anak dengan Down syndrome memiliki kondisi fisik dan mental yang tidak selalu sama.
-
-Bahkan, gejala atau ciri-ciri Down syndrome atau sindrom Down bisa berbeda-beda pada setiap bayi dan anak-anak.
-
-        </p>
-        <div class="github-buttons">
-          <a href="https://www.creative-tim.com/product/material-kit-pro?ref=index-mk2" target="_blank" class="btn bg-gradient-primary mb-5 mb-sm-0">Baca Lebih Lanjut</a>
-          <div class="github-button">
-            <span></span>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-5 col-12 my-auto">
-        <a href="https://keenu.epizy.com">
-          <img class="w-100 border-radius-lg shadow-lg" src="../assets/img/Bayi-Syndrome.jpg" alt="Product Image">
-        </a>
-      </div>
-    </div>
-  </div>
-</section> -->
-
-        <!-- <section class="my-5 position-relative bg-gradient-dark mx-n3" id="tentangKita">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-8 text-start mb-5 mt-5">
-        <h3 class="text-white z-index-1 position-relative">Tim Deadliner</h3>
-        <p class="text-white opacity-8 mb-0">Rebahan jalan ninjaku SKS metodeku.</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-6 col-12">
-        <div class="card card-profile mt-4">
-          <div class="row">
-            <div class="col-lg-4 col-md-6 col-12 mt-n5">
-              <a href="javascript:;">
-                <div class="p-3 pe-md-0">
-                  <img class="w-100 border-radius-md shadow-lg" src="../assets/img/team-5.jpg" alt="image">
-                </div>
-              </a>
-            </div>
-            <div class="col-lg-8 col-md-6 col-12 my-auto">
-              <div class="card-body ps-lg-0">
-                <h5 class="mb-0">Emma Junaedi</h5>
-                <h6 class="text-gradient text-primary">Dokter Internis</h6>
-                <p class="mb-0">Seorang Dokter yang sangat mencintai Pekerjaannya dan Pasangan Hidupnya.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-6 col-12">
-        <div class="card card-profile mt-lg-4 mt-5">
-          <div class="row">
-            <div class="col-lg-4 col-md-6 col-12 mt-n5">
-              <a href="javascript:;">
-                <div class="p-3 pe-md-0">
-                  <img class="w-100 border-radius-md shadow-lg" src="../assets/img/bruce-mars.jpg" alt="image">
-                </div>
-              </a>
-            </div>
-            <div class="col-lg-8 col-md-6 col-12 my-auto">
-              <div class="card-body ps-lg-0">
-                <h5 class="mb-0">Rianti Surya</h5>
-                <h6 class="text-gradient text-primary">Pacar Yusuf</h6>
-                <p class="mb-0">Seorang mahasiswa yang melayani majikan majikannya dan bucin dengan bambang.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row mt-4 mb-5">
-      <div class="col-lg-6 col-12">
-        <div class="card card-profile mt-4 z-index-2">
-          <div class="row">
-            <div class="col-lg-4 col-md-6 col-12 mt-n5">
-              <a href="javascript:;">
-                <div class="p-3 pe-md-0">
-                  <img class="w-100 border-radius-md shadow-lg" src="../assets/img/ivana-squares.jpg" alt="image">
-                </div>
-              </a>
-            </div>
-            <div class="col-lg-8 col-md-6 col-12 my-auto">
-              <div class="card-body ps-lg-0">
-                <h5 class="mb-0">Yusuf</h5>
-                <h6 class="text-gradient text-primary">Pacar Yanti</h6>
-                <p class="mb-0">Dimana Bumi dipijak disitu saya tidur. bucin yanti</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-6 col-12">
-        <div class="card card-profile mt-lg-4 mt-5 z-index-2">
-          <div class="row">
-            <div class="col-lg-4 col-md-6 col-12 mt-n5">
-              <a href="javascript:;">
-                <div class="p-3 pe-md-0">
-                  <img class="w-100 border-radius-md shadow-lg" src="../assets/img/Rizki.jpg" alt="image">
-                </div>
-              </a>
-            </div>
-            <div class="col-lg-8 col-md-6 col-12 my-auto">
-              <div class="card-body ps-lg-0">
-                <h5 class="mb-0">M Rizki Nugroho</h5>
-                <h6 class="text-gradient text-primary">Software Engineer</h6>
-                <p class="mb-0">Seorang manusia nolep yang doyan rebahan dan ngoding.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-
-
-        <!-- -------   START PRE-FOOTER 2 - simple social line w/ title & 3 buttons    -------- -->
-
-        <!-- -------   END PRE-FOOTER 2 - simple social line w/ title & 3 buttons    -------- -->
-
     </div>
     <?php
     foreach ($query as $data) {
@@ -369,9 +239,9 @@ Bahkan, gejala atau ciri-ciri Down syndrome atau sindrom Down bisa berbeda-beda 
                         <a href="https://www.creative-tim.com/product/material-kit">
                             <img src="../assets/img/logo.png" class="mb-3 footer-logo" alt="main_logo">
                         </a>
-                        <h6 class="font-weight-bolder mb-4">Potads</h6>
+                        <h6 class="font-weight-bolder mb-4">Sistem Pakar</h6>
                     </div>
-                    <div>
+                    <!-- <div>
                         <ul class="d-flex flex-row ms-n3 nav">
                             <li class="nav-item">
                                 <a class="nav-link pe-1" href="https://www.facebook.com/CreativeTim" target="_blank">
@@ -404,7 +274,7 @@ Bahkan, gejala atau ciri-ciri Down syndrome atau sindrom Down bisa berbeda-beda 
                                 </a>
                             </li>
                         </ul>
-                    </div>
+                    </div> -->
                 </div>
 
 
@@ -512,15 +382,16 @@ Bahkan, gejala atau ciri-ciri Down syndrome atau sindrom Down bisa berbeda-beda 
 
                 <div class="col-12">
                     <div class="text-center">
-                        <p class="text-dark my-4 text-sm font-weight-normal">
-                            All rights reserved. Copyright © <script>
-                                document.write(new Date().getFullYear())
-                            </script><a href="http://keenu.epizy.com/" target="_blank"> Rizki</a>.
-                        </p>
+                        <div class="text-center">
+                            <!-- <p class="text-dark my-4 text-sm font-weight-normal">
+              All rights reserved. Copyright © <script>
+                document.write(new Date().getFullYear())
+              </script><a href="http://keenu.epizy.com/" target="_blank"> Rizki</a>.
+            </p> -->
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
     </footer>
 
 
@@ -543,8 +414,9 @@ Bahkan, gejala atau ciri-ciri Down syndrome atau sindrom Down bisa berbeda-beda 
 
 
 
-    <!--   Core JS Files   -->
-    <script src="../assets/js/core/popper.min.js" type="text/javascript"></script>
+    <!-- Core JS Files -->
+    <script src="../assets/js/core/popper.min.js" type="text/javascript">
+    </script>
     <script src="../assets/js/core/bootstrap.min.js" type="text/javascript"></script>
     <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
 
